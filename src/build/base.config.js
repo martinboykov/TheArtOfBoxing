@@ -7,7 +7,9 @@ const {
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-const { ProvidePlugin } = require('webpack')
+const {
+    ProvidePlugin
+} = require('webpack')
 
 const config = {
     // Include source maps in development files
@@ -15,7 +17,7 @@ const config = {
 
     entry: {
         // Main entry point of our app
-        app: resolve(__dirname, '..',  'app.js'),
+        app: resolve(__dirname, '..', 'app.js'),
     },
 
     output: {
@@ -42,6 +44,10 @@ const config = {
         modules: [
             resolve(__dirname, '..', '..', 'node_modules'),
         ],
+        alias: {
+            handlebars: 'handlebars/dist/handlebars.min.js',
+        }
+
     },
 
     module: {
@@ -63,6 +69,10 @@ const config = {
                     fallback: 'style-loader',
                     use: ['css-loader', 'sass-loader'],
                 }),
+            },
+            {
+                test: /\.handlebars$/,
+                loader: 'text-loader',
             },
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -98,7 +108,7 @@ const config = {
         }),
         new HtmlWebpackPlugin({
             title: 'SPA tutorial',
-            template: resolve(__dirname, '..',  'app.html'),
+            template: resolve(__dirname, '..', 'app.html'),
         }),
         new ExtractTextPlugin({
             filename: 'style.[hash].css',

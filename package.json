@@ -23,13 +23,17 @@
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
+    "text-loader": "0.0.1",
     "url-loader": "^0.5.9",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
+    "handlebars": "^4.0.10",
     "jquery": "^3.2.1",
+    "navigo": "^5.3.1",
+    "path": "^0.12.7",
     "popper.js": "^1.12.5"
   }
 }
