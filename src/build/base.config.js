@@ -13,7 +13,7 @@ const {
 
 const config = {
     // Include source maps in development files
-    devtool: isProd ? false : '#cheap-module-source-map',
+    // devtool: isProd ? false : '#cheap-module-source-map',
 
     entry: {
         // Main entry point of our app
@@ -75,7 +75,7 @@ const config = {
                 loader: 'text-loader',
             },
             {
-                test: /\.(png|jpe?g|gif|svg|ico)(\?.*)?$/,
+                test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 loader: 'url-loader',
                 query: {
                     limit: 10000,
