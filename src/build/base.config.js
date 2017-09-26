@@ -75,12 +75,17 @@ const config = {
                 loader: 'text-loader',
             },
             {
-                test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+                test: /\.(png|jpe?g|gif|svg|ico)(\?.*)?$/,
                 loader: 'url-loader',
                 query: {
                     limit: 10000,
                     name: 'images/[name].[hash:7].[ext]'
                 }
+            },
+            {
+                test: /\.ico$/,
+                exclude: /node_modules/,
+                loader: 'file-loader?name=[name].[ext]'
             },
             {
                 test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,

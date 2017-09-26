@@ -1,7 +1,16 @@
 <div class="entry">
-  <h1>Hello, {{user}}!</h1>
-  <div class="body">
-    This is Home page.<br>
-    Go to <a href="/about" data-path>About page</a>
-  </div>
+    <div class="body">
+        This is Home page.<br> Go to <a href="/about"
+            data-path>About page</a>
+        {{#each techniques}}
+        <div class="">
+            <div class="">
+                <h3>{{title}}</h3>
+                <h4 class="">Author: {{author}}</h4>
+                <p>Desctription:{{description}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
 </div>
