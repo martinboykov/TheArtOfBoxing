@@ -28,7 +28,7 @@ It could be a simple game, component library, business application or any other
 ##  General Requirements
 Please define and implement the following assets in your project:
 - Slice the given design in PSD (30 points)
-  - You can find your selected design [here](PSDs.md)
+  - You can find your selected design [here](https://github.com/TelerikAcademy/Slice-and-Dice/blob/master/Course-Project/PSDs.md)
 - Implement responsive design (30 points)
   - Your web application must look good on any resolution
 - Use a web server (30 points)
