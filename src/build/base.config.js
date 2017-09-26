@@ -112,7 +112,6 @@ const config = {
             Popper: 'popper.js',
         }),
         new HtmlWebpackPlugin({
-            title: 'SPA tutorial',
             template: resolve(__dirname, '..', 'app.html'),
         }),
         new ExtractTextPlugin({

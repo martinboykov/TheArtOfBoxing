@@ -1,10 +1,12 @@
 import './styles/main.scss'
+import './assets/favicon.ico'
+import config from '../src/core/data/firebase'
 
 import $ from 'jquery'
 
 import Navigo from 'navigo'
 
-import config from '../src/core/data/firebase'
+
 
 // defined as chunks so each page is loaded separetley
 const HomePage = () => System.import('./core/controllers/home').then(module => module.default());
