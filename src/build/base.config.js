@@ -7,6 +7,8 @@ const {
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+const { ProvidePlugin } = require('webpack')
+
 const config = {
     // Include source maps in development files
     devtool: isProd ? false : '#cheap-module-source-map',
@@ -89,6 +91,11 @@ const config = {
     },
 
     plugins: [
+        new ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            Popper: 'popper.js',
+        }),
         new HtmlWebpackPlugin({
             title: 'SPA tutorial',
             template: resolve(__dirname, '..',  'app.html'),

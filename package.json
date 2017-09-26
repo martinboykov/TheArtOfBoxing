@@ -1,5 +1,5 @@
 {
-  "name": "TheArtOfBoxing",
+  "name": "TheStyleOfBoxing",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -26,5 +26,10 @@
     "url-loader": "^0.5.9",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5"
   }
 }
