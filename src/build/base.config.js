@@ -22,7 +22,7 @@ const config = {
 
     output: {
         // As mentioned before, built files are stored in dist
-        path: resolve(__dirname, '..', 'dist'),
+        path: resolve(__dirname, '..', '..', 'dist'),
 
         // In our case we serve assets directly from root
         publicPath: '/',
