@@ -1,6 +1,6 @@
-import $ from 'jquery'
-import { compile } from 'handlebars'
-import template from '../../view/home.handlebars'
+import $ from 'jquery';
+import { compile } from 'handlebars';
+import template from '../../view/home.handlebars';
 
 // This import loads the firebase namespace along with all its type information.
 import * as firebase from 'firebase/app';
@@ -18,8 +18,8 @@ export default (ctx, next) => {
         console.log(techniques);
         $('#app').html(compile(template)({
             techniques
-        }))
-    })
+        }));
+    });
     // Promise.all([
     //         dateService.getBooks(),
     //         template
@@ -31,4 +31,4 @@ export default (ctx, next) => {
     //         }))
     //     });
 
-}
+};

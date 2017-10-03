@@ -1,15 +1,15 @@
 // Define this constant for easier usage
-const isProd = process.env.NODE_ENV === 'production'
+const isProd = process.env.NODE_ENV === 'production';
 
 const {
     resolve
-} = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+} = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const {
     ProvidePlugin
-} = require('webpack')
+} = require('webpack');
 
 const config = {
     // Include source maps in development files
@@ -119,7 +119,7 @@ const config = {
             disable: !isProd,
         }),
     ],
-}
+};
 
 if (!isProd) {
     config.devServer = {
@@ -127,7 +127,7 @@ if (!isProd) {
         hot: true,
         publicPath: '/',
         historyApiFallback: true,
-    }
+    };
 }
 
-module.exports = config
+module.exports = config;
