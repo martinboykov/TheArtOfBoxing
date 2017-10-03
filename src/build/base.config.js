@@ -57,17 +57,10 @@ const config = {
                 exclude: /node_modules/,
             },
             {
-                test: /\.css$/,
-                use: ExtractTextPlugin.extract({
+                test: /\.(css|scss|sass)$/,
+                loader: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: 'css-loader',
-                }),
-            },
-            {
-                test: /\.scss|\.sass$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: ['css-loader', 'sass-loader'],
+                    use: 'css-loader!postcss-loader!sass-loader'
                 }),
             },
             {
