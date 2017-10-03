@@ -11,6 +11,8 @@ const {
     ProvidePlugin
 } = require('webpack');
 
+const processCss = isProd ? '!postcss-loader' : '';
+
 const config = {
     // Include source maps in development files
     // devtool: isProd ? false : '#cheap-module-source-map',
@@ -60,7 +62,7 @@ const config = {
                 test: /\.(css|scss|sass)$/,
                 loader: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: 'css-loader!postcss-loader!sass-loader'
+                    use: `css-loader${processCss}!sass-loader`
                 }),
             },
             {

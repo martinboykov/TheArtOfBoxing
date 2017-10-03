@@ -14,7 +14,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --hot --inline --config src/build/base.config.js",
-    "prod": "rimraf ./dist && cross-env NODE_ENV=production webpack --config src/build/base.config.js",
+    "prod": "rimraf ./dist && cross-env NODE_ENV=production webpack -p --config src/build/base.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
