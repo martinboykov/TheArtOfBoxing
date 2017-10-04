@@ -1,15 +1,15 @@
-// Compass
-@import 'compass';
-@import 'compass/reset';
-
 // Mixins and Settings Sass Files
 @import 'partials/settings';
 @import 'partials/mixins';
 
 // Vendor Sass Files
-@import 'vendor/animate/animate';
+@import "~bootstrap/scss/bootstrap";
+@import 'vendor/ie/ie';
+@import 'vendor/spinner';
 
 // Core Setup Sass Files
+@import './core/reset';
+@include global-reset;
 @import 'core/normalize';
 @import 'core/global';
 @import 'core/typography';
@@ -19,18 +19,21 @@
 @import 'layout/footer';
 
 // Pages Sass Files
-@import 'pages/front';
+@import 'pages/home';
+@import 'pages/basics';
+@import 'pages/training';
+@import 'pages/technique';
+@import 'pages/strategy';
+@import 'pages/diet';
 
 
 
 
 
-@import "~bootstrap/scss/bootstrap";
-@import './core/reset';
-@include global-reset;
+
+
 // @import './core/normalize.scss';
-@import './vendor/spinner';
-@import './vendor/ie/ie';
+
 // $grid-gutter-width: 50px ;
 
 // .row {
