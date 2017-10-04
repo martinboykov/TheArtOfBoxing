@@ -80,7 +80,12 @@ const config = {
             {
                 test: /\.ico$/,
                 exclude: /node_modules/,
-                loader: 'file-loader?name=[name].[ext]'
+                loader: 'file-loader',
+                options: {
+                    name: 'images/favicon/[name].[ext]'
+                }
+
+                // loader: 'file-loader?name=[name].[ext]'
             },
             {
                 test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,

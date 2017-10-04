@@ -1,67 +1,68 @@
+// Compass
+@import 'compass';
+@import 'compass/reset';
+
+// Mixins and Settings Sass Files
+@import 'partials/settings';
+@import 'partials/mixins';
+
+// Vendor Sass Files
+@import 'vendor/animate/animate';
+
+// Core Setup Sass Files
+@import 'core/normalize';
+@import 'core/global';
+@import 'core/typography';
+
+// Layout Sass Files
+@import 'layout/header';
+@import 'layout/footer';
+
+// Pages Sass Files
+@import 'pages/front';
+
+
+
+
+
 @import "~bootstrap/scss/bootstrap";
-$text-color: #FF0000;
-#app {
-    color: $text-color;
-}
+@import './core/reset';
+@include global-reset;
+// @import './core/normalize.scss';
+@import './vendor/spinner';
+@import './vendor/ie/ie';
+// $grid-gutter-width: 50px ;
 
-// To be extracted in future
-.spinner {
-    margin: 100px auto;
-    width: 50px;
-    height: 40px;
-    text-align: center;
-    font-size: 10px;
-}
-
-.spinner>div {
-    background-color: #333;
-    height: 100%;
-    width: 6px;
-    display: inline-block;
-    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
-    animation: sk-stretchdelay 1.2s infinite ease-in-out;
-}
-
-.spinner .rect2 {
-    -webkit-animation-delay: -1.1s;
-    animation-delay: -1.1s;
-}
-
-.spinner .rect3 {
-    -webkit-animation-delay: -1.0s;
-    animation-delay: -1.0s;
-}
-
-.spinner .rect4 {
-    -webkit-animation-delay: -0.9s;
-    animation-delay: -0.9s;
-}
-
-.spinner .rect5 {
-    -webkit-animation-delay: -0.8s;
-    animation-delay: -0.8s;
-}
-
-@-webkit-keyframes sk-stretchdelay {
-    0%,
-    40%,
-    100% {
-        -webkit-transform: scaleY(0.4)
-    }
-    20% {
-        -webkit-transform: scaleY(1.0)
-    }
-}
-
-@keyframes sk-stretchdelay {
-    0%,
-    40%,
-    100% {
-        transform: scaleY(0.4);
-        -webkit-transform: scaleY(0.4);
-    }
-    20% {
-        transform: scaleY(1.0);
-        -webkit-transform: scaleY(1.0);
-    }
-}
+// .row {
+//     .content {
+//         border: 1px solid black;
+//         &.content-1 {
+//             &.col:first-child,
+//             .col:not(:last-child) {
+//                 padding-right: 7px;
+//             }
+//             &.col:last-child {
+//                 padding-left: 7px;
+//             }
+//             &.col:not(:first-child),
+//             .col:not(:last-child) {
+//                 padding-right: 7px;
+//                 padding-left: 7px;
+//             }
+//         }
+//         &.content-2 {
+//             &.col:first-child,
+//             .col:not(:last-child) {
+//                 padding-right: 17px;
+//             }
+//             &.col:last-child {
+//                 padding-left: 17px;
+//             }
+//             &.col:not(:first-child),
+//             .col:not(:last-child) {
+//                 padding-right: 17px;
+//                 padding-left: 17px;
+//             }
+//         }
+//     }
+// }

@@ -1,10 +1,10 @@
-import './styles/main.scss'
-import './assets/favicon.ico'
-import config from '../src/core/data/firebase'
+import './styles/main.scss';
+import './assets/favicon.ico';
+import config from '../src/core/data/firebase';
 
-import $ from 'jquery'
+import $ from 'jquery';
 
-import Navigo from 'navigo'
+import Navigo from 'navigo';
 
 
 
@@ -12,17 +12,17 @@ import Navigo from 'navigo'
 const HomePage = () => System.import('./core/controllers/home').then(module => module.default());
 const AboutPage = () => System.import('./core/controllers/about').then(module => module.default());
 
-const router = new Navigo()
+const router = new Navigo();
 
 router
     .on('/', HomePage)
     .on('/home', HomePage)
     .on('/about', AboutPage)
-    .resolve()
+    .resolve();
 
 $(window).on('load', () => {
     $(document).on('click', '[data-path]', (e) => {
-        e.preventDefault()
-        router.navigate($(e.target).attr('href'))
-    })
-})
+        e.preventDefault();
+        router.navigate($(e.target).attr('href'));
+    });
+});
