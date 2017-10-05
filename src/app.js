@@ -1,5 +1,5 @@
 import './styles/main.scss';
-import './assets/favicon.ico';
+import './assets/favicon/favicon.ico';
 import config from '../src/core/data/firebase';
 
 import $ from 'jquery';

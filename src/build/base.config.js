@@ -1,21 +1,20 @@
 // Define this constant for easier usage
 const isProd = process.env.NODE_ENV === 'production';
+// const processCss = isProd ? '!postcss-loader' : ''; // autoprefixer only in ENV === 'production'
+const processCss =  '!postcss-loader' ; // autoprefixer only in ENV === 'production'
 
 const {
     resolve
 } = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 const {
     ProvidePlugin
 } = require('webpack');
-
-const processCss = isProd ? '!postcss-loader' : '';
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const config = {
     // Include source maps in development files
-    // devtool: isProd ? false : '#cheap-module-source-map',
+    // devtool: isProd ? false : '#cheap-module-source-map', // source-map only in ENV === 'development'
 
     entry: {
         // Main entry point of our app
@@ -59,12 +58,26 @@ const config = {
                 exclude: /node_modules/,
             },
             {
-                test: /\.(css|scss|sass)$/,
-                loader: ExtractTextPlugin.extract({
+                test: /\.css$/,
+                use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: `css-loader${processCss}!sass-loader`
+                    use: ['css-loader', 'resolve-url-loader'],
                 }),
             },
+            {
+                test: /\.scss|\.sass$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: `css-loader${processCss}!resolve-url-loader!sass-loader?sourceMap`
+                }),
+            },
+            // {
+            //     test: /\.(css|scss|sass)$/,
+            //     loader: ExtractTextPlugin.extract({
+            //         fallback: 'style-loader',
+            //         use: `css-loader${processCss}!sass-loader`
+            //     }),
+            // },
             {
                 test: /\.handlebars$/,
                 loader: 'text-loader',
