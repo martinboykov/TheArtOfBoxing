@@ -1,7 +1,7 @@
 // Define this constant for easier usage
 const isProd = process.env.NODE_ENV === 'production';
 // const processCss = isProd ? '!postcss-loader' : ''; // autoprefixer only in ENV === 'production'
-const processCss =  '!postcss-loader' ; // autoprefixer only in ENV === 'production'
+const processCss =  '!postcss-loader' ; // autoprefixer  in ENV === 'production' and ENV === 'development'
 
 const {
     resolve

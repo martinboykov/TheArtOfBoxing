@@ -1,4 +1,5 @@
 <div class="home">
+    <!-- Header -->
     <header class="header">
         <div class="logo">
             <a href="" title="The Style Of Boxing">The <span class="logo-gold">Style</span> Of <span class="logo-gold">Boxing</span></a>
@@ -6,10 +7,10 @@
         <nav class="navigation">
             <ul class="menu">
                 <li class="item active">
-                    <a href="/home">Home</a>
+                    <a href="/home" data-path>Home</a>
                 </li>
                 <li class="item">
-                    <a href="/about">Basics</a>
+                    <a href="/about" data-path>Basics</a>
                 </li>
                 <li class="item">
                     <a href="#">Techniques</a>
@@ -38,34 +39,38 @@
             </ul>
         </nav>
     </header>
-    <section class="articles">
-        <div class="row"> {{#each techniques}}
-            <div class="content content-1 col col-lg-3 col-md-4 col-sm-6 ">
-                <article class="article">
-                    <div class="top">
-                        <div class="category">
-                            <h2><a href="">{{category}}</a></h2>
-                        </div>
-                        <div class="date-month">
-                            <h2 class="date">{{date}}</h2>
-                        </div>
-                        <div class="date-day">
-                            <h2 class="date">{{date}}</h2>
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="dotted">
-                            <h1>{{title}}</h1>
-                            <h3>posted by {{author}}</h3>
-                        </div>
-                        <div class="dashed">{{{content}}}</div>
-                    </div>
-                </article>
-            </div>
-            {{/each}}
-        </div>
-    </section>
-    <div class="pagination">
+    <main class="main" role="main">
 
-    </div>
+
+        <section class="articles">
+            <div class="row"> {{#each techniques}}
+                <div class="content content-1 col col-lg-3 col-md-4 col-sm-6 ">
+                    <article class="article">
+                        <div class="top">
+                            <div class="category">
+                                <h2><a href="">{{category}}</a></h2>
+                            </div>
+                            <div class="date-month">
+                                <h2 class="date">{{date}}</h2>
+                            </div>
+                            <div class="date-day">
+                                <h2 class="date">{{date}}</h2>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="dotted">
+                                <h1>{{title}}</h1>
+                                <h3>posted by {{author}}</h3>
+                            </div>
+                            <div class="dashed">{{{content}}}</div>
+                        </div>
+                    </article>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+        <div class="pagination">
+
+        </div>
+    </main>
 </div>
