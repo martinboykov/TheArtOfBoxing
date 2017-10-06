@@ -5,7 +5,6 @@ import template from '../../view/home.handlebars';
 // This import loads the firebase namespace along with all its type information.
 import * as firebase from 'firebase/app';
 
-import './footer';
 // These imports load individual services into the firebase namespace.
 import 'firebase/auth';
 import 'firebase/database';
