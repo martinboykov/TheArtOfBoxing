@@ -21,8 +21,8 @@
 // Droid Sans - Regular
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
 $font-default: "Droid Sans", sans-serif;
-$font-headings: "League Gothic", sans-serif;
-$font-myriad-pro: "Myriad Pro", sans-serif;
+$font-lg: "League Gothic", sans-serif;
+$font-mp: "Myriad Pro", sans-serif;
 
 // Colours
 $background: #323232;
@@ -38,7 +38,10 @@ $light-black: #2b2b2b;
 
 
 // // Grid settings
+$full-width: 1680px;
 $home-grid-width: 1510px;
 // $grid-width: 1200px;
 // $grid-columns: 12;
 // $grid-gutter: 20px;
+
+

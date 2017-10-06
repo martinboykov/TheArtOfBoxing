@@ -15,7 +15,7 @@ export default (ctx, next) => {
     db.on("value", snap => {
         const techniques = (snap.val());
         console.log(techniques);
-        $('#main').html(compile(template)({
+        $('#app').html(compile(template)({
             techniques
         }));
     });

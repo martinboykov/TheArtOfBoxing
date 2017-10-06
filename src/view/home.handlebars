@@ -1,39 +1,145 @@
 <div class="home">
-
-    <!-- Main -->
-    <main class="main" role="main">
-        <section class="articles">
-            <div class="row"> {{#each techniques}}
-                <div class="content content-1 col col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
-                    <article class="article">
-                        <div class="top">
-                            <div class="category">
-                                <h2 class="white"><a href="">{{category}}</a></h2>
-                            </div>
-                            <div class="date-month">
-                                <h2 class="date white">{{date}}</h2>
-                            </div>
-                            <div class="date-day">
-                                <h2 class="date white">{{date}}</h2>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <div class="dotted">
-                                <h1 class="red">{{title}}</h1>
-                                <h3 class="black">posted by {{author}}</h3>
-                            </div>
-                            <div class="dashed">{{{content}}}</div>
-                        </div>
-                    </article>
-                </div>
-                {{/each}}
+    <div class="app-wrapper ">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <a href="" title="The Style">The <span class="logo gold">Style</span></a>
+                <!-- <a href="" title="The Style Of Boxing">The <span class="logo gold">Style</span> Of <span class="logo gold">Boxing</span></a> -->
+                <!-- overlay with &#9646 for Y -->
+                <!-- <span class="overlay">TheSt<span class="">Y</span>leOfBoxing</span> -->
             </div>
-        </section>
-        <div class="pagination">
-            <!-- to implement: http://esimakin.github.io/twbs-pagination/ and/or
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="item active">
+                        <a href="/home" data-path>Home</a>
+                    </li>
+                    <li class="item">
+                        <a href="/about" data-path>Fashion</a>
+                        <!-- <a href="/about" data-path>Basics</a> -->
+                    </li>
+                    <li class="item">
+                        <a href="#">Politics</a>
+                        <!-- <a href="#">Techniques</a> -->
+                    </li>
+                    <li class="item">
+                        <a href="#">TECHNOLOGY</a>
+                        <!-- <a href="#">Training</a> -->
+                    </li>
+                    <li class="item">
+                        <a href="#">AUTOMOTIVE</a>
+                        <!-- <a href="#">Strategy</a> -->
+                    </li>
+                    <li class="item hover">
+                        <a href="#">EDUCATION</a>
+                        <!-- <a href="#">Diet</a> -->
+                    </li>
+                    <li class="item">
+                        <a href="#">LIFE</a>
+                        <!-- <a href="#">Dummy-Item</a> -->
+                    </li>
+                    <li class="item">
+                        <a href="#">COMPUTING</a>
+                        <!-- <a href="#">Dummy-Item</a> -->
+                    </li>
+                    <li class="item">
+                        <a href="#">HOME AND GARDEN</a>
+                        <!-- <a href="#">Dummy-Item</a> -->
+                    </li>
+                    <li class="item">
+                        <a href="#">Dummy-Item</a>
+                        <!-- <a href="#">Dummy-Item</a> -->
+                    </li>
+                </ul>
+            </nav>
+            <a href="" class="mobile-toggle"></a>
+        </header>
+        <div class="container">
+            <!-- Main -->
+            <main class="main" role="main">
+                <section class="articles">
+                    <div class="row"> {{#each techniques}}
+                        <div class="content content-1 col col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                            <article class="article">
+                                <div class="top">
+                                    <div class="category">
+                                        <h2 class="white">{{category}}</h2>
+                                        <!-- <h2 class="white"><a href="">{{category}}</a></h2> -->
+                                    </div>
+                                    <div class="date-month white">
+                                        <h2 class="date white">{{date}}</h2>
+                                    </div>
+                                    <div class="date-day white">
+                                        <h2 class="date white">{{date}}</h2>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="dotted">
+                                        <h1 class="red">{{title}}</h1>
+                                        <h3 class="black">posted by {{author}}</h3>
+                                    </div>
+                                    <div class="dashed">{{{content}}}</div>
+                                </div>
+                            </article>
+                        </div>
+                        {{/each}}
+                    </div>
+                </section>
+                <div class="pagination">
+                    <!-- to implement: http://esimakin.github.io/twbs-pagination/ and/or
             https://github.com/flaviusmatis/simplePagination.js -->
+                </div>
+            </main>
         </div>
-    </main>
 
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="row">
+                    <section class="recent-posts col-md-3 col-sm-6 col-12">
+                        <h1 class="gold">Recent posts</h1>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                    </section>
+                    <section class="custom-text-widget col-md-3 col-sm-6 col-12">
+                        <h1 class="gold">Custom Text Widget</h1>
+                        <p>Fusce suscipit sapien sit amet sapien placerat ultrices. Vivamus sed massa ac metus gravida dignissim
+                            egestas posuere lorem. Sed ipsum urna, facilisis quis eleifend ut, sodales sed lectus. Integer
+                            felis eu ipsum malesuada luctus. Sed pharetra eleifend ante vitae fermentum. Praesent fermentum
+                            volutpat porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim, nibh quis
+                            ultricies laoreet, libero justo suscipit risus, sed sollicitudin odio erat at purus. Quisque
+                            molestie venenatis turpis eu adipiscing. Pellentesque habi</p>
+                    </section>
+                    <section class="recent-comments col-md-3 col-sm-6 col-12">
+                        <h1 class="gold">Recent comments</h1>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                    </section>
+                    <section class="archives col-md-3 col-sm-6 col-12">
+                        <h1 class="gold">Archives</h1>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                        <p><span>&raquo;</span>Fusce suscipit sapien sit amet </p>
+                    </section>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Designed by <span class="dark-grey bold">ElegnatThemes</span> | Powered by <span class="dark-grey bold">WordPress</span></p>
+            </div>
+        </footer>
 
+    </div>
 </div>`
