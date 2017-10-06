@@ -1,11 +1,11 @@
 import $ from 'jquery';
 import { compile } from 'handlebars';
-import template from '../../view/home.handlebars';
+import template from '../../view/footer.handlebars';
 
 // This import loads the firebase namespace along with all its type information.
 import * as firebase from 'firebase/app';
 
-import './footer';
+
 // These imports load individual services into the firebase namespace.
 import 'firebase/auth';
 import 'firebase/database';
@@ -16,7 +16,7 @@ export default (ctx, next) => {
     db.on("value", snap => {
         const techniques = (snap.val());
         console.log(techniques);
-        $('#main').html(compile(template)({
+        $('#footer').html(compile(template)({
             techniques
         }));
     });

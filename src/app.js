@@ -6,11 +6,17 @@ import $ from 'jquery';
 
 import Navigo from 'navigo';
 
-
+import './core/controllers/footer';
 
 // defined as chunks so each page is loaded separetley
-const HomePage = () => System.import('./core/controllers/home').then(module => module.default());
-const AboutPage = () => System.import('./core/controllers/about').then(module => module.default());
+const HomePage = () => {
+    System.import('./core/controllers/home').then(module => module.default());
+    System.import('./core/controllers/footer').then(module => module.default());
+};
+const AboutPage = () => {
+    System.import('./core/controllers/about').then(module => module.default());
+    System.import('./core/controllers/footer').then(module => module.default());
+};
 
 const router = new Navigo();
 
