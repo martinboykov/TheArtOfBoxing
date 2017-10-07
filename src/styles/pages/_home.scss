@@ -42,11 +42,11 @@
                         margin-top: 10px;
                         .nav-item {
                             .nav-link {
+                                padding: 0 10px 0 9px;
                                 // Extra large devices (large desktops, 1200px and up)
                                 @media (min-width: 1200px) {
-                                    padding: 0 10px 0 9px;
                                 }
-
+                                text-shadow: (1px 1px rgba(0, 0, 0, 1));
                                 font-family: $font-lg;
                                 text-decoration: none;
                                 font-size: 24px;
@@ -72,12 +72,12 @@
                     position: relative;
                     border: 0px;
                     .glyphicon {
+                        margin: 11px 9px 0 0;
+                        right: 0px;
                         color: $gold;
                         text-shadow: (1px 1px rgba(0, 0, 0, 0.7));
                         position: absolute;
                         pointer-events: none;
-                        right: 0px;
-                        margin: 11px 9px 0 0;
                         transform: scaleX(-1);
                         -moz-transform: scaleX(-1);
                         -webkit-transform: scaleX(-1);
@@ -93,9 +93,9 @@
 
                     }
                     label {
-                        position: absolute;
                         top: 11px;
                         left: 14px;
+                        position: absolute;
                         font-family: arial;
                         font-size: 12px;
                         font-style: italic;
