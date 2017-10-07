@@ -1,7 +1,6 @@
 /* Fonts */
 
 // added resolve-url-loader
-
 // League Gothic - Regular
 @font-face {
     font-family: 'League Gothic';
@@ -20,10 +19,16 @@
 
 // Droid Sans - Regular
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
-$font-default: "Droid Sans", sans-serif;
-$font-lg: "League Gothic", sans-serif;
-$font-mp: "Myriad Pro", sans-serif;
-
+// Yanone Kaffeesatz
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700');
+$font-default: "Droid Sans",
+sans-serif;
+$font-lg: "League Gothic",
+sans-serif;
+$font-mp: "Myriad Pro",
+sans-serif;
+$font-yk: "Yanone Kaffeesatz",
+sans-serif;
 // Colours
 $background: #323232;
 // home
@@ -35,13 +40,9 @@ $light-grey: #a1a1a1;
 $dark-grey: #686868;
 $black: #2c2c2c;
 $light-black: #2b2b2b;
-
-
 // // Grid settings
 $full-width: 1680px;
 $home-grid-width: 1510px;
 // $grid-width: 1200px;
 // $grid-columns: 12;
 // $grid-gutter: 20px;
-
-

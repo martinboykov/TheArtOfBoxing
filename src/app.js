@@ -1,4 +1,5 @@
 import './styles/main.scss';
+import 'bootstrap';
 import './assets/favicon/favicon.ico';
 import config from '../src/core/data/firebase';
 

@@ -22,7 +22,7 @@ const config = {
     },
 
     output: {
-        // As mentioned before, built files are stored in dist
+        // built files are stored in dist
         path: resolve(__dirname, '..', '..', 'dist'),
 
         // In our case we serve assets directly from root
@@ -86,8 +86,8 @@ const config = {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 loader: 'url-loader',
                 query: {
-                    limit: 10000,
-                    name: 'images/[name].[hash:7].[ext]'
+                    limit: 100,
+                    name: 'images/[name].[ext]'
                 }
             },
             {
@@ -104,7 +104,7 @@ const config = {
                 test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
                 loader: 'url-loader',
                 options: {
-                    limit: 1000,
+                    limit: 100,
                     name: 'fonts/[name].[hash:7].[ext]'
                 }
             },

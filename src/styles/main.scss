@@ -1,19 +1,17 @@
 // Mixins and Settings Sass Files
 @import 'partials/settings';
 @import 'partials/mixins';
-
 // Vendor Sass Files
 @import "~bootstrap/scss/bootstrap";
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 @import 'vendor/ie/ie';
 @import 'vendor/spinner';
-
 // Core Setup Sass Files
 @import './core/reset';
 @include global-reset;
 @import 'core/normalize';
 @import 'core/global';
 @import 'core/typography';
-
 // Pages Sass Files
 @import 'pages/home';
 @import 'pages/basics';
