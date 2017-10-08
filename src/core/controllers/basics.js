@@ -10,7 +10,7 @@ import 'firebase/auth';
 import 'firebase/database';
 
 export default (ctx, next) => {
-    const db = firebase.database().ref("basics");
+    const db = firebase.database().ref("techniques");
 
     db.on("value", snap => {
         const basics = (snap.val());

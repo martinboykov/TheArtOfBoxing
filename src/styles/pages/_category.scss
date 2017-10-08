@@ -1,4 +1,5 @@
 /* Soecific Category Page */
+
 .category {
     .app-wrapper {
         max-width: $full-width;
@@ -88,32 +89,28 @@
                         color: #595959;
                     }
                 }
-
             }
-            .small-nav{
+            .small-nav {
                 margin: 42px 0 0 86px;
                 font-family: $font-mp;
-                .home{
-                    color:$dark-grey;
+                .home {
+                    color: $dark-grey;
                 }
-                .arrow{
-                    color:$dark-grey;
+                .arrow {
+                    color: $dark-grey;
                     padding-left: 4px;
                 }
-                .home{
-                    color:#8e8e8e;
+                .home {
+                    color: #8e8e8e;
                     padding-left: 1px;
                 }
-
             }
         } // MAiN
         .main {
-
             .container {
                 max-width: 1540px;
-
                 .articles {
-                    float: left;
+                    // float: left;
                     max-width: 1250px;
                     margin-left: 2px;
                     .content {
@@ -216,15 +213,41 @@
                         // }
                     }
                 }
-                .right-section{
-                    float: right;
-                    .recent-comments {
-                        width:230px;
+                .right-section {
+                    @media (max-width: 575px) {
+                        display: none;
+                    } // float: right;
+                    .recent-comments, .recent-posts {
+                        width: 230px;
                         height: 280px;
-                        background-color: white;
+                        background-color: #e7e7e7;
+                        margin-bottom: 23px;
+                        text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+                        .dotted {
+                            height: 59px;
+                            line-height: 59px;
+                            border-bottom: 1px dotted rgba(0, 0, 0, 0.35);
+                            h1 {
+                                padding: 2px 0 0 15px;
+                            }
+                        }
+                        .text {
+                            height: 211px;
+                            .items {
+                                padding: 17px 0 0 15px;
+                                .item {
+                                    padding-bottom: 17px;
+                                    .arrow-dotted {
+                                        padding-right: 4px;
+                                    }
+                                }
+                            }
+
+                        }
+
                     }
                     .recent-posts {
-                        width:230px;
+                        width: 230px;
                         height: 280px;
                         background-color: white;
                     }
@@ -326,19 +349,15 @@
             .footer-bottom {
                 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.78);
                 width: 100%;
-
-
-
                 p {
                     margin-top: 52px;
                     margin-left: 1173px;
                     color: $dark-grey;
                     padding-bottom: 20px;
                     @media (max-width: 1500px) {
-                        margin-top:  52px;
+                        margin-top: 52px;
                         margin-left: 15px;
                     }
-
                     .bold {
                         color: #8c8c8c;
                     }
