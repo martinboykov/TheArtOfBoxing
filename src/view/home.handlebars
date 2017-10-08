@@ -11,67 +11,8 @@
                 </div>
             </div>
             <div class="header-bottom">
-                <div class="row">
-                    <div class="col-lg-8 mr-auto">
-                        <!-- navigation -->
-                        <nav class="navigation">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a href="home" data-path class="nav-link active">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="about" class="nav-link" data-path>Entertainment</a>
-                                    <!-- <a href="/about" data-path>Basics</a> -->
-                                </li>
-                                <li class="nav-item">
-                                    <a href="about" class="nav-link" data-path>Fashion</a>
-                                    <!-- <a href="/about" data-path>Basics</a> -->
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link"> Politics</a>
-                                    <!-- <a href="#">Techniques</a> -->
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">TECHNOLOGY</a>
-                                    <!-- <a href="#">Training</a> -->
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">AUTOMOTIVE</a>
-                                    <!-- <a href="#">Strategy</a> -->
-                                </li>
-                                <li class="nav-item hover">
-                                    <a href="#" class="nav-link">EDUCATION</a>
-                                    <!-- <a href="#">Diet</a> -->
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">LIFE</a>
-                                    <!-- <a href="#">Dummy-Item</a> -->
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">COMPUTING</a>
-                                    <!-- <a href="#">Dummy-Item</a> -->
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">HOME AND GARDEN</a>
-                                    <!-- <a href="#">Dummy-Item</a> -->
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-auto">
-                        <!-- search -->
-                        <div class="search-field">
 
 
-                                <!-- <img src="./images/search-icon.png" alt=""> -->
-                                <i class="glyphicon glyphicon-search"></i>
-                                <label for="input">Search this website...</label>
-                                <input type="text" class="form-control"/>
-
-                        </div>
-
-                    </div>
-                </div>
             </div>
             <!-- mobile -->
             <a href="" class="mobile-toggle"></a>
@@ -84,26 +25,30 @@
             <div class="container">
                 <section class="articles">
                     <div class="row"> {{#each techniques}}
-                        <div class="content content-1 col-xl-2  col-lg-3 col-md-4 col-sm-6 ">
+                        <div class="content content-1   col-lg-2 col-md-3 col-sm-4 col-6">
                             <article class="article">
                                 <div class="top">
-                                    <div class="category">
+                                    <div class=" category text-center">
                                         <h2 class="white">{{category}}</h2>
-                                        <!-- <h2 class="white"><a href="">{{category}}</a></h2> -->
                                     </div>
-                                    <div class="date-month white">
-                                        <h2 class="date white">{{date}}</h2>
+                                    <div class=" month white">
+                                        <h2 class="date white">{{month}}</h2>
                                     </div>
-                                    <div class="date-day white">
-                                        <h2 class="date white">{{date}}</h2>
+                                    <div class=" day white">
+                                        <h2 class="date white">{{day}}</h2>
                                     </div>
+
+
                                 </div>
                                 <div class="bottom">
                                     <div class="dotted">
                                         <h1 class="red">{{title}}</h1>
                                         <h3 class="black">posted by {{author}}</h3>
                                     </div>
-                                    <div class="dashed">{{{content}}}</div>
+                                    <div class="dashed">
+                                        <div class="text">{{{content}}}</div>
+                                        <img src="./images/border-dashed.png" alt="">
+                                    </div>
                                 </div>
                             </article>
                         </div>

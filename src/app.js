@@ -1,6 +1,7 @@
 import './styles/main.scss';
 import 'bootstrap';
 import './assets/favicon/favicon.ico';
+import './assets/images/border-dashed.png';
 import config from '../src/core/data/firebase';
 
 import $ from 'jquery';
