@@ -11,3 +11,29 @@
     font-style: $style;
     @include font-smoothing;
 }
+
+@mixin gradient-main () {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1d1c1d+0,1e1e1e+3,2b2b2a+13,323232+21,323232+79,2b2b2a+87,1e1e1e+97,1d1c1d+100 */
+    background: #1d1c1d;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #1d1c1d 0%, #1e1e1e 3%, #2b2b2a 13%, #323232 21%, #323232 79%, #2b2b2a 87%, #1e1e1e 97%, #1d1c1d 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1d1c1d 0%, #1e1e1e 3%, #2b2b2a 13%, #323232 21%, #323232 79%, #2b2b2a 87%, #1e1e1e 97%, #1d1c1d 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #1d1c1d 0%, #1e1e1e 3%, #2b2b2a 13%, #323232 21%, #323232 79%, #2b2b2a 87%, #1e1e1e 97%, #1d1c1d 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d1c1d', endColorstr='#1d1c1d', GradientType=1);
+    /* IE6-9 */
+}
+
+@mixin gradient-footer () {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c2c2c+0,2c2c2c+0,181819+0,1c1c1c+6,1d1d1f+6,1f1f1d+7,1d1d1f+7,1f1f1d+7,1f1f20+7,2c2c2c+21,2c2c2c+79,1f1f20+93,1f1f1d+93,1d1d1f+94,1f1f1d+94,1d1d1f+94,1c1c1c+95,191918+100,151516+100&0.87+0,1+0,1+100 */
+    background: -moz-linear-gradient(left, rgba(24, 24, 25, 1) 0%, rgba(28, 28, 28, 1) 6%, rgba(31, 31, 29, 1) 7%, rgba(44, 44, 44, 1) 21%, rgba(44, 44, 44, 1) 79%, rgba(31, 31, 29, 1) 93%, rgba(29, 29, 31, 1) 94%, rgba(28, 28, 28, 1) 95%, rgba(21, 21, 22, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(24, 24, 25, 1) 0%, rgba(28, 28, 28, 1) 6%, rgba(31, 31, 29, 1) 7%, rgba(44, 44, 44, 1) 21%, rgba(44, 44, 44, 1) 79%, rgba(31, 31, 29, 1) 93%, rgba(29, 29, 31, 1) 94%, rgba(28, 28, 28, 1) 95%, rgba(21, 21, 22, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(24, 24, 25, 1) 0%, rgba(28, 28, 28, 1) 6%, rgba(31, 31, 29, 1) 7%, rgba(44, 44, 44, 1) 21%, rgba(44, 44, 44, 1) 79%, rgba(31, 31, 29, 1) 93%, rgba(29, 29, 31, 1) 94%, rgba(28, 28, 28, 1) 95%, rgba(21, 21, 22, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181819', endColorstr='#151516', GradientType=1);
+    /* IE6-9 */
+}

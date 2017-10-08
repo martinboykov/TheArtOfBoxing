@@ -6,18 +6,7 @@
         min-height: 1628px;
         margin: 0 auto;
         box-sizing: border-box;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1d1c1d+0,1e1e1e+3,2b2b2a+13,323232+21,323232+79,2b2b2a+87,1e1e1e+97,1d1c1d+100 */
-        background: #1d1c1d;
-        /* Old browsers */
-        background: -moz-linear-gradient(left, #1d1c1d 0%, #1e1e1e 3%, #2b2b2a 13%, #323232 21%, #323232 79%, #2b2b2a 87%, #1e1e1e 97%, #1d1c1d 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #1d1c1d 0%, #1e1e1e 3%, #2b2b2a 13%, #323232 21%, #323232 79%, #2b2b2a 87%, #1e1e1e 97%, #1d1c1d 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, #1d1c1d 0%, #1e1e1e 3%, #2b2b2a 13%, #323232 21%, #323232 79%, #2b2b2a 87%, #1e1e1e 97%, #1d1c1d 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d1c1d', endColorstr='#1d1c1d', GradientType=1);
-        /* IE6-9 */
-        // background: #67CCCB;
+        @include gradient-main; // background: #67CCCB;
         // HEADER
         .header {
             height: 336px;
@@ -37,7 +26,7 @@
             }
             .header-bottom {
                 margin-top: 3px;
-                margin-left: 74px;
+                margin-left: 75px;
                 .navigation {
                     .nav {
                         margin-top: 10px;
@@ -113,7 +102,6 @@
                         padding-right: 220px;
                         margin-bottom: 26px;
                         .article {
-
                             width: 230px;
                             position: absolute;
                             background-color: white;
@@ -190,7 +178,8 @@
                                         text-overflow: clip;
                                     }
                                     img {
-                                        padding-top: 9px;;
+                                        padding-top: 9px;
+                                        ;
                                     }
                                 }
                             }
@@ -207,9 +196,109 @@
                         // }
                     }
                 }
-                .pagination{
-                    height: 129px;
+                .pagination {
+                    height: 103px;
                     margin: 0 auto;
+                }
+            }
+        }
+        .footer {
+            @include gradient-footer;
+            $media-large: 1500px;
+            height: 420px;
+            .footer-top {
+                // Extra large devices (large desktops, 1200px and up)
+                padding-top: 46px;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.78);
+                .text {
+                    font-family: $font-mp;
+                    color: #d1d1d1;
+                }
+                .arrow {
+                    font-family: 'Arial';
+                    font-size: 18px;
+                    color: #5d5d5d;
+                }
+                .section-recent-posts {
+                    max-width: 250px;
+                    @media (min-width: $media-large) {
+                        margin-left: 182px;
+                    }
+                    .recent-posts {
+                        padding: 9px 0 0 1px;
+                        .recent-post {
+                            padding-bottom: 12px;
+                            line-height: 16px;
+                            .arrow {
+                                margin-right: 11px;
+                            }
+                        }
+                    }
+                }
+                .custom-text-widget {
+                    max-width: 300px;
+                    @media (min-width: $media-large) {
+                        margin-left: 92px;
+                    }
+                    h1 {
+                        margin-bottom: 11px;
+                    }
+                    p {
+                        margin-left: 2px; // padding-bottom: 12px;
+                        line-height: 17px;
+                        text-justify: auto;
+                    }
+                }
+                .section-recent-comments {
+                    max-width: 275px;
+                    @media (min-width: $media-large) {
+                        margin-left: 38px;
+                    }
+                    .recent-comments {
+                        padding: 11px 0 0 1px;
+                        .recent-comment {
+                            padding-bottom: 12px;
+                            line-height: 16px;
+                            .arrow {
+                                margin-right: 11px;
+                            }
+                            &:nth-child(3) {
+                                color: white;
+                                .arrow {
+                                    color: #9a1d0d;
+                                }
+                            }
+                        }
+                    }
+                }
+                .section-archives {
+                    max-width: 275px;
+                    @media (min-width: $media-large) {
+                        margin-left: 50px;
+                    }
+                    .archives-items {
+                        padding: 10px 0 0 2px;
+                        .archive-item {
+                            padding-bottom: 12px;
+                            line-height: 16px;
+                            .arrow {
+                                margin-right: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-bottom {
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.78);
+                float: right;
+                margin-top: 52px;
+                margin-right: 185px;
+
+                p {
+                    color: $dark-grey;
+                    .bold {
+                        color: #8c8c8c;
+                    }
                 }
             }
         }
