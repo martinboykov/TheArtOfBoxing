@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import { compile } from 'handlebars';
-import template from '../../view/category.handlebars';
+import template from '../../view/post.handlebars';
 
 // This import loads the firebase namespace along with all its type information.
 import * as firebase from 'firebase/app';
@@ -10,14 +10,14 @@ import 'firebase/auth';
 import 'firebase/database';
 
 export default (ctx, next) => {
-    const db = firebase.database().ref("basics");
+    const db = firebase.database().ref("techniques/100001");
 
     db.on("value", snap => {
-        const basics = (snap.val());
-        const category = "basics";
-        console.log(basics);
+        const post = (snap.val());
+        const category = post.category;
+        console.log(post);
         $('#app').html(compile(template)({
-            basics, category
+            post, category
         }));
     });
     // Promise.all([

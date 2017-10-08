@@ -100,10 +100,15 @@
                     color: $dark-grey;
                     padding-left: 4px;
                 }
-                .home {
+                .category {
+                    &::first-letter {
+                        text-transform: uppercase;
+                    }
+
                     color: #8e8e8e;
                     padding-left: 1px;
                 }
+
             }
         } // MAiN
         .main {
@@ -217,7 +222,8 @@
                     @media (max-width: 575px) {
                         display: none;
                     } // float: right;
-                    .recent-comments, .recent-posts {
+                    .recent-comments,
+                    .recent-posts {
                         width: 230px;
                         height: 280px;
                         background-color: #e7e7e7;
@@ -242,9 +248,7 @@
                                     }
                                 }
                             }
-
                         }
-
                     }
                     .recent-posts {
                         width: 230px;
