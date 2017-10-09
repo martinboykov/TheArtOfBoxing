@@ -54,7 +54,7 @@
 
 @mixin media-query-post() {
     @media (max-width: 1200px) {
-        float: left;
+        align-self: auto;
         width: 944px;
     }
     @media (max-width: 991px) {
@@ -76,7 +76,12 @@
         width: 350px;
     }
 }
+@mixin media-query-content() {
+    @media (max-width: 1200px) {
+        padding-left: 15px;
+    }
 
+}
 @mixin media-query-logo() {
     @media (max-width: 1200px) {
         font-size: 120px;

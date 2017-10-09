@@ -11,11 +11,14 @@
         .header {
             height: 336px;
             /* Logo */
+            @include media-query-header;
             .header-top {
                 padding-top: 101px;
                 padding-left: 67px;
+                @include media-query-header-top;
                 .logo {
                     a {
+                        @include media-query-logo;
                         text-shadow: (1px 1px rgba(0, 0, 0, 1));
                         font-family: $font-yk;
                         font-size: 140px;
@@ -27,13 +30,13 @@
             .header-bottom {
                 margin-top: 3px;
                 margin-left: 78px;
+                @include media-query-header-bottom;
                 .navigation {
                     .nav {
                         margin-top: 10px;
                         .nav-item {
                             .nav-link {
-                                padding: 0 10px 0 9px; // Extra large devices (large desktops, 1200px and up)
-                                @media (min-width: 1200px) {}
+                                padding: 0 10px 0 9px;
                                 text-shadow: (1px 1px rgba(0, 0, 0, 1));
                                 font-family: $font-lg;
                                 text-decoration: none;
@@ -42,6 +45,7 @@
                                 color: white;
                                 &:hover {
                                     color: $gold;
+                                    background-color: #222222;
                                 }
                                 &:active {
                                     color: $gold;

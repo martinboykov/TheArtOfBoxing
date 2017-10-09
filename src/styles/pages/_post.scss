@@ -47,6 +47,7 @@
                                 color: white;
                                 &:hover {
                                     color: $gold;
+                                    background-color: #222222;
                                 }
                                 &:active {
                                     color: $gold;
@@ -127,10 +128,10 @@
             .container {
                 max-width: 1656px;
                 padding-left: 0;
+                @include media-query-content;
                 .left-main-section {
                     float: left;
                     width: 1199px;
-
                     padding-bottom: 41px;
                     @include media-query-post;
                     .top-post-section {
