@@ -16,7 +16,7 @@
             @include media-query-header;
             .header-top {
                 padding-top: 101px;
-                padding-left: 67px;
+                padding-left: 55px;
                 @include media-query-header-top;
                 .logo {
                     a {
@@ -31,7 +31,7 @@
             }
             .header-bottom {
                 margin-top: 3px;
-                margin-left: 74px;
+                margin-left: 66px;
                 @include media-query-header-bottom;
                 .navigation {
                     .nav {
@@ -96,7 +96,7 @@
                 }
             }
             .small-nav {
-                margin: 48px 0 0 83px;
+                margin: 42px 0 0 73px;
                 @include media-query-small-nav;
                 font-family: $font-mp;
                 text-decoration: none;
@@ -108,7 +108,7 @@
                 }
                 .arrow {
                     color: $dark-grey;
-                    padding-left: 4px;
+                    padding-left: 6px;
                 }
                 .category {
                     &::first-letter {
@@ -130,6 +130,7 @@
                 .left-main-section {
                     float: left;
                     width: 1199px;
+
                     padding-bottom: 41px;
                     @include media-query-post;
                     .top-post-section {
@@ -161,14 +162,14 @@
                                 height: 196px;
                                 background-color: #efefef;
                                 z-index: 999;
-                                margin-top: -163px;
+                                margin-top: -153px;
                                 margin-left: 32px;
                             }
                             .frame {
                                 width: 186px;
                                 height: 186px;
                                 position: relative;
-                                top: 30px;
+                                top: 40px;
                                 left: 37px;
                                 box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 1) inset;
                                 background: white;
@@ -212,15 +213,16 @@
                                 }
                             }
                             .tags {
-                                margin: 25px 0 34px 32px;
+                                margin: 22px 0 34px 30px;
                                 .tags-title {
                                     color: $black;
                                     font-size: 24px;
+                                    margin-left: 3px;
                                 }
                                 .tag-item {
                                     float: left;
-                                    padding: 9px 16px 9px 11px;
-                                    margin: 0 3px 4px 0;
+                                    padding: 12px 16px 10px 11px;
+                                    margin: 5px 3px -4px 0px;
                                     background-color: #efefef;
                                     color: #6e6e6e;
                                     font-size: 11px;
@@ -231,17 +233,17 @@
                                 }
                             }
                             .related-posts {
-                                margin: 25px 0 34px 32px;
+                                margin: 25px 0 24px 32px;
                                 h1 {
                                     font-size: 24px;
-                                    margin-bottom: 13px;
+                                    margin-bottom: 10px;
                                     color: $black;
                                 }
                                 .item {
                                     font-size: 12px;
-                                    padding-bottom: 16px;
+                                    padding-bottom: 12px;
                                     .arrow-dotted {
-                                        padding-right: 8px;
+                                        padding-right: 6px;
                                     }
                                 }
                             }
@@ -255,7 +257,7 @@
                                 .share-button {
                                     display: block;
                                     float: left;
-                                    padding-right: 11px;
+                                    padding-right: 10px;
                                     img {
                                         width: 26px;
                                     }
@@ -272,11 +274,11 @@
                             .dotted {
                                 // background: red;
                                 @include media-query-post;
-                                height: 97px;
+                                min-height: 106px;
                                 width: 905px;
                                 border-bottom: 1px dotted rgba(0, 0, 0, 0.35);
                                 h1 {
-                                    padding: 23px 0 0 0px;
+                                    padding: 33px 0 0 0px;
                                     font-size: 36px;
                                 }
                                 h3 {
@@ -285,8 +287,11 @@
                             }
                             .text {
                                 p {
-                                    margin-top: 9px;
-                                    line-height: 18px;
+                                    margin-top: 7px;
+                                    line-height: 19px;
+                                    overflow: auto;
+                                    padding-bottom: 15px;
+                                    margin-right: 35px;
                                 }
                             }
                             .border-article-top {
@@ -307,8 +312,8 @@
                         float: right;
                         position: relative;
                         .title {
-                            margin: 10px 0 0 28px;
-                            height: 82px;
+                            margin: 12px 0 0 28px;
+                            height: 80px;
                             h1 {
                                 font-size: 36px;
                                 line-height: 82px;
@@ -317,7 +322,7 @@
                         .comment {
                             border-top: 1px dotted #a6a6a6;
                             border-bottom: 1px dotted #a6a6a6;
-                            margin: 0 28px 40px 28px;
+                            margin: 0 28px 40px 29px;
                             min-height: 157px;
                             .avatar {
                                 position: relative;
@@ -354,7 +359,7 @@
                                     font-size: 24px;
                                     padding-bottom: 12px;
                                 }
-                                .content {}
+
                             }
                         }
                         .border-comments-top {
@@ -362,11 +367,12 @@
                             top: 1px;
                         }
                         .post-comment {
-                            margin: 0 0 21px 28px;
+                            margin: 0 0 21px 29px;
                             height: 437px;
                             max-width: 570px;
                             h1 {
                                 font-size: 36px;
+                                margin-bottom: 26px;
                             }
                             .author {
                                 max-width: 344px;
@@ -445,19 +451,21 @@
                                 &.active {
                                     background-color: #e7e7e7;
                                 }
+                                h1 {
+                                    padding: 3px 3px 0 0;
+                                }
                             }
                         }
                         .post {
                             border-bottom: 1px dotted #a6a6a6; // margin: 0 28px 40px 0px;
                             height: 70px;
-                            ;
                             width: 378px;
                             text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
                             .avatar {
                                 position: relative;
                                 float: left;
-                                top: 26px;
-                                left: 26px;
+                                top: 16px;
+                                left: 16px;
                                 img {
                                     height: 38px;
                                     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 1) inset;
@@ -470,8 +478,8 @@
                                 }
                             }
                             .text {
-                                margin-left: 40px;
-                                margin-top: 22px;
+                                margin-left: 26px;
+                                margin-top: 15px;
                                 float: left;
                                 title {
                                     color: $light-black;
@@ -482,6 +490,7 @@
                                     font-size: 11px;
                                     font-style: italic;
                                     margin-top: 7px;
+
                                 }
                             }
                         }
@@ -502,19 +511,25 @@
                             line-height: 59px;
                             border-bottom: 1px dotted rgba(0, 0, 0, 0.35);
                             h1 {
-                                padding: 2px 0 0 15px;
+                                padding: 4px 0 0 23px;
                             }
                         }
                         .text {
                             height: 211px;
                             .items {
-                                padding: 17px 0 0 15px;
+                                padding: 15px 0 0 20px;
                                 .item {
                                     padding-bottom: 17px;
                                     .arrow-dotted {
-                                        padding-right: 4px;
+                                        padding-right: 8px;
+
                                     }
+
                                 }
+                            }
+                            .content{
+                                padding: 8px 0 0 23px;
+                                line-height: 19px;
                             }
                         }
                         .right-main-section-bottom {

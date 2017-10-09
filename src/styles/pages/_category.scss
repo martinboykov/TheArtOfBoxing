@@ -114,10 +114,12 @@
         .main {
             .container {
                 max-width: 1540px;
+                min-height: 836px;
+
                 .articles {
                     // float: left;
                     max-width: 1250px;
-                    margin-left: 2px;
+                    margin-left: 3px;
                     .content {
                         width: 230px;
                         height: 360px;
@@ -222,6 +224,7 @@
                     @media (max-width: 575px) {
                         display: none;
                     } // float: right;
+
                     .recent-comments,
                     .recent-posts {
                         width: 230px;
@@ -264,6 +267,7 @@
             @include gradient-footer;
             $media-large: 1500px;
             min-height: 420px;
+            margin-left: 0px;
             .footer-top {
                 // Extra large devices (large desktops, 1200px and up)
                 padding-top: 46px;
