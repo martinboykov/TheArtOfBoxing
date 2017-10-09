@@ -229,6 +229,7 @@
                         background-color: #e7e7e7;
                         margin-bottom: 23px;
                         text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+                        box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 1);
                         .dotted {
                             height: 59px;
                             line-height: 59px;
@@ -249,11 +250,6 @@
                                 }
                             }
                         }
-                    }
-                    .recent-posts {
-                        width: 230px;
-                        height: 280px;
-                        background-color: white;
                     }
                 }
                 .pagination {
