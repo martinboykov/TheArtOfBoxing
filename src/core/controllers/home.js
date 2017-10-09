@@ -9,25 +9,18 @@ import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
 
-export default (ctx, next) => {
-    const db = firebase.database().ref("techniques");
+export default () => {
+    const db = firebase.database().ref();
+    const events = db.child('Posts');
+    const query = events
+        .orderByChild('category')
+        .limitToLast(12);
 
-    db.on("value", snap => {
-        const techniques = (snap.val());
-        console.log(techniques);
+    query.on("value", snap => {
+        const posts = (snap.val());
+        console.log(posts);
         $('#app').html(compile(template)({
-            techniques
+            posts
         }));
     });
-    // Promise.all([
-    //         dateService.getBooks(),
-    //         template
-    //     ])
-    //     .then(([books, template]) => {
-    //         $('#app').html(compile(template)({
-    //             user,
-    //             books
-    //         }))
-    //     });
-
 };

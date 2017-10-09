@@ -106,10 +106,6 @@
                     padding-left: 4px;
                 }
                 .category {
-                    &::first-letter {
-                        text-transform: uppercase;
-                    }
-
                     color: #8e8e8e;
                     padding-left: 1px;
                 }
@@ -128,7 +124,7 @@
                     .content {
                         width: 230px;
                         height: 360px;
-                        padding-right: 220px;
+                        padding-right: 240px;
                         margin-bottom: 26px;
                         .article {
                             width: 230px;
@@ -187,7 +183,7 @@
                                 background-color: white;
                                 .dotted {
                                     // background: red;
-                                    height: 73px;
+                                    min-height: 73px;
                                     border-bottom: 1px dotted rgba(0, 0, 0, 0.35);
                                     h1 {
                                         padding: 12px 0 0 16px;

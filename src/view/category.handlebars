@@ -4,10 +4,8 @@
         <header class="header">
             <div class="header-top">
                 <div class="logo">
-                    <a href="home" data-path title="The Style"><span class="white">The</span><span class=" gold">Style</span></a>
-                    <!-- <a href="" title="The Style Of Boxing">The <span class="logo gold">Style</span> Of <span class="logo gold">Boxing</span></a> -->
-                    <!-- overlay with &#9646 for Y -->
-                    <!-- <span class="overlay">TheSt<span class="">Y</span>leOfBoxing</span> -->
+                    <!-- <a href="home" data-path title="The Style"><span class="white">The</span><span class=" gold">Style</span></a> -->
+                    <a href="home" data-path title="The Style Of Boxing"><span class="white">The</span> <span class=" gold">Style</span> <span class="white">Of</span> <span class=" gold">Boxing</span></a>
                 </div>
             </div>
             <div class="header-bottom">
@@ -17,43 +15,19 @@
                         <nav class="navigation">
                             <ul class="nav">
                                 <li class="nav-item">
-                                    <a href="home" data-path class="nav-link active">Home</a>
+                                    <a href="/home" data-path class="nav-link active">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="basics"  data-path class="nav-link" >Entertainment</a>
-                                    <!-- <a href="/about" data-path>Basics</a> -->
+                                    <a href="/basics" data-path class="nav-link">Basics</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="post" data-path class="nav-link" >Fashion</a>
-                                    <!-- <a href="/about" data-path>Basics</a> -->
+                                    <a href="/techniques" data-path class="nav-link">Techniques</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link"> Politics</a>
-                                    <!-- <a href="#">Techniques</a> -->
+                                    <a href="/training" data-path class="nav-link"> Training</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">TECHNOLOGY</a>
-                                    <!-- <a href="#">Training</a> -->
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">AUTOMOTIVE</a>
-                                    <!-- <a href="#">Strategy</a> -->
-                                </li>
-                                <li class="nav-item hover">
-                                    <a href="#" class="nav-link">EDUCATION</a>
-                                    <!-- <a href="#">Diet</a> -->
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">LIFE</a>
-                                    <!-- <a href="#">Dummy-Item</a> -->
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">COMPUTING</a>
-                                    <!-- <a href="#">Dummy-Item</a> -->
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">HOME AND GARDEN</a>
-                                    <!-- <a href="#">Dummy-Item</a> -->
+                                    <a href="/strategy" data-path class="nav-link">Strategy</a>
                                 </li>
                             </ul>
                         </nav>
@@ -61,18 +35,13 @@
                     <div class="col-auto">
                         <!-- search -->
                         <div class="search-field">
-
-
                             <!-- <img src="./images/search-icon.png" alt=""> -->
                             <i class="glyphicon glyphicon-search"></i>
                             <label for="input">Search this website...</label>
                             <input type="text" class="form-control" />
-
                         </div>
-
                     </div>
                 </div>
-
             </div>
             <!-- mobile -->
             <a href="" class="mobile-toggle"></a>
@@ -91,7 +60,7 @@
                 <div class="row">
                     <div class="col-lg-10 col-md-8 col-sm-6 ">
                         <section class="articles">
-                            <div class="row"> {{#each basics}}
+                            <div class="row"> {{#each posts}}
                                 <div class="content content-1   col-lg-2 col-md-3 col-sm-4 col-6">
                                     <article class="article">
                                         <div class="top">
@@ -142,20 +111,20 @@
                                 <img src="./images/border-dashed.png" alt="">
                             </div>
                             <div class="recent-posts">
-                                    <div class="dotted ">
-                                            <h1 class="red">Recent posts</h1>
-                                        </div>
-                                        <div class="text">
-                                            <ul class="items">
-                                                <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
-                                                <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
-                                                <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
-                                                <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
-                                                <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
-                                                <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
-                                            </ul>
-                                        </div>
-                                        <img src="./images/border-dashed.png" alt="">
+                                <div class="dotted ">
+                                    <h1 class="red">Recent posts</h1>
+                                </div>
+                                <div class="text">
+                                    <ul class="items">
+                                        <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
+                                        <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
+                                        <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
+                                        <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
+                                        <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
+                                        <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
+                                    </ul>
+                                </div>
+                                <img src="./images/border-dashed.png" alt="">
                             </div>
                         </div>
                     </div>

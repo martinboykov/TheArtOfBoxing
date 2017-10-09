@@ -14,11 +14,11 @@ export default () => {
     const events = db.child('Posts');
     const query = events
         .orderByChild('category')
-        .equalTo('basics')
+        .equalTo('training')
         .limitToFirst(12);
 
     query.on("value", snap => {
-        const category = 'Basics';
+        const category = 'Training';
         const posts = (snap.val());
         console.log(posts);
         $('#app').html(compile(template)({

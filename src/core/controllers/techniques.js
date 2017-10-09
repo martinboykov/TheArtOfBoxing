@@ -1,5 +1,7 @@
 import $ from 'jquery';
-import { compile } from 'handlebars';
+import {
+    compile
+} from 'handlebars';
 import template from '../../view/category.handlebars';
 
 // This import loads the firebase namespace along with all its type information.
@@ -14,11 +16,11 @@ export default () => {
     const events = db.child('Posts');
     const query = events
         .orderByChild('category')
-        .equalTo('basics')
+        .equalTo('techniques')
         .limitToFirst(12);
 
     query.on("value", snap => {
-        const category = 'Basics';
+        const category = 'Techniques';
         const posts = (snap.val());
         console.log(posts);
         $('#app').html(compile(template)({
