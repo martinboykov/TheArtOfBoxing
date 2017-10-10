@@ -24,7 +24,9 @@ For the purpose of the project  designed and implemented an object-oriented web 
 - Firebase API, Database, Host,
 - moment,
 - Autoprefixer
-- VS Code (with added extensions JSHint and Stylelint)
+- VS Code (with added extensions JSHint and Stylelint),
+- Photoshop,
+- Github
 
 The Web Application consists of the following sections:
 
@@ -32,6 +34,9 @@ The Web Application consists of the following sections:
  - *Recent Posts are displayed visible on this page*
 
 ### Basics, Techniques, Training, Strategy are separete pages for the different Post Categories
+
+### Post section, where you can add your comment to a specific Post
+
 
 
 
