@@ -1,5 +1,3 @@
-# TheStyleOfBoxing
-
 ## ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)   ![Telerik](https://github.com/martinboykov/Telerik_Academy/blob/master/images/telerik-academy-logo.jpg)   ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)
 
 <h1 align="center">The Style of Boxing - Single Page JavaScript Applications created by Martin Martinov</h1>
@@ -37,3 +35,12 @@ The Web Application consists of the following sections:
 
 
 
+
+
+
+
+##Deliverables
+ - *Record a short video showcasing your application - ....*
+ - *Preview at Telerik Academy Showcase System - ....*
+ - *Link for the GitHub repository of our SPA - ....*
+ - *Hosted application on a server  - ....*
