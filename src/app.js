@@ -2,7 +2,7 @@ import './styles/main.scss';
 import 'bootstrap';
 import './assets/favicon/favicon.ico';
 import './assets/images/border-dashed.png';
-import post from './core/controllers/post';
+import {post, comment} from './core/controllers/post';
 
 import config from '../src/core/data/firebase';
 
@@ -33,6 +33,7 @@ router
         const id = +params.id.substr(1);
         console.log(id);
         post(id);
+        comment(id)
     })
     .resolve();
 

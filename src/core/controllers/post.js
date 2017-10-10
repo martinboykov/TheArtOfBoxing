@@ -14,17 +14,17 @@ import '../../assets/icons/facebook-icon.png';
 import '../../assets/icons/reddit-icon.png';
 import '../../assets/icons/twitter-icon.png';
 import '../../assets/images/right-main-section-bottom.png';
+import {
+    Comment
+} from '../models/comment.model';
 
 // This import loads the firebase namespace along with all its type information.
 import * as firebase from 'firebase/app';
 
 // These imports load individual services into the firebase namespace.
-import 'firebase/auth';
 import 'firebase/database';
 
-import Navigo from 'navigo';
-
-export default (id) => {
+function post(id) {
 
     const db = firebase.database().ref(`Posts/${id}`);
 
@@ -39,7 +39,61 @@ export default (id) => {
             title
         }));
     });
+
 }
 
+function comment(id) {
+    //make a variable to keep track of data coming from firebase
+    let data = [];
+
+    //create new connection to firebase
+    const db = firebase.database().ref(`Posts/${id}/comments`);
 
 
+    //listen to data updates from firebase
+    db.on("value", function (snapshot) {
+        console.log(snapshot.val());
+        //when the data updates at firebase, put it in the data variable
+        data = snapshot.val();
+    })
+    //Entire Form (handler)
+    $('#newComment').submit(function (event) {
+
+        const $form = $(this);
+        console.log("Submit to Firebase");
+
+        //disable submit button
+        $form.find("#saveForm").prop('disabled', true);
+
+        //get values to send to Firebase
+        const author = $('#author').val();
+        console.log(author);
+
+        const content = $('#content').val();
+        console.log(content);
+        const postedAt = firebase.database.ServerValue.TIMESTAMP;
+        //take the values from the form, and put them in an object
+        let newComment = new Comment(author, content, postedAt);
+
+        console.log(newComment);
+
+        //put new object in data array
+        data.push(newComment);
+        console.log(data);
+
+        //send the new data to Firebase
+        db.set(data, function (err) {
+            if (err) {
+                alert("Data no go");
+            }
+        });
+
+        return false;
+    });
+};
+
+
+export {
+    post,
+    comment
+};

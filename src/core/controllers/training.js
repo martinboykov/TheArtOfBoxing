@@ -1,12 +1,12 @@
 import $ from 'jquery';
-import { compile } from 'handlebars';
+import {
+    compile
+} from 'handlebars';
 import template from '../../view/category.handlebars';
 
 // This import loads the firebase namespace along with all its type information.
 import * as firebase from 'firebase/app';
-
 // These imports load individual services into the firebase namespace.
-
 import 'firebase/database';
 
 export default () => {

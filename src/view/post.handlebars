@@ -159,16 +159,17 @@
                         </div>
                         <div class="post-comment">
                             <h1 class="red">Leave a comment</h1>
-                            <form action="/action_page.php">
+                            <form action="POST" id="newComment">
                                 <div class="form-group">
-                                    <input type="text" name="author" class="form-control author" placeholder="Enter your name here..." required>
+                                    <input type="text" name="author" id="author" class="form-control author" placeholder="Enter your name here..." required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea rows="4" cols="50" class="form-control textarea" name="content" placeholder="Enter your comment here..." wrap="hard"
-                                        required></textarea>
+                                    <textarea rows="4" cols="50" id="content" class="form-control textarea" name="content" placeholder="Enter your comment here..."
+                                        wrap="hard" required>
+                                    </textarea>
                                 </div>
 
-                                <button type="submit" value="Submit" class="btn btn-default submit-button">Submit
+                                <button type="submit" value="Submit" id="saveForm" class="btn btn-default submit-button">Submit
                                         </button>
                             </form>
                         </div>

@@ -14,7 +14,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const config = {
     // Include source maps in development files
-    // devtool: isProd ? false : '#cheap-module-source-map', // source-map only in ENV === 'development'
+    devtool: isProd ? false : '#cheap-module-source-map', // source-map only in ENV === 'development'
 
     entry: {
         // Main entry point of our app

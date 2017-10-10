@@ -6,7 +6,6 @@ import template from '../../view/home.handlebars';
 import * as firebase from 'firebase/app';
 
 // These imports load individual services into the firebase namespace.
-import 'firebase/auth';
 import 'firebase/database';
 
 export default () => {

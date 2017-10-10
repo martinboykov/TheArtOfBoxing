@@ -378,10 +378,18 @@
                             .author {
                                 max-width: 344px;
                                 height: 39px;
+                                &:hover, &:active, &:visited{
+                                    border: $red;
+                                    box-shadow: $red;
+                                }
                             }
                             .textarea {
                                 max-width: 570px;
                                 height: 156px;
+                                &:hover, &:active, &:visited{
+                                    border: $red;
+                                 box-shadow: $red;
+                                }
                             }
                             .submit-button {
                                 margin-top: 14px;
