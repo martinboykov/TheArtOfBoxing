@@ -38,6 +38,15 @@ The Web Application consists of the following sections:
 ### Post section, where you can add your comment to a specific Post
 
 ### Architecture of the Application
+- In the root of sorce folder (src) you can find the root files: app.js and app.html, from where Webpack loads the entire application
+- In view folder can be found the handlebars templates, with which we render the app on the screen of the users devices
+- In styles section can be found the scss files with main.scss as root file
+- In core folder can be found all the javascript files
+- in build folder is the webpack configuration file
+- In assets folder are all the icons, fonts and other odditional files used to build the app
+- In dist folder is where the production files are been created
+
+
 ![alt text](https://github.com/martinboykov/TheStyleOfBoxing/blob/master/src/assets/images/Architecture.png)
 
 
