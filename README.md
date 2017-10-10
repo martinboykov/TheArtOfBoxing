@@ -14,7 +14,7 @@
 ##Project Discription
 "The Style of Boxing" is a blog where you can find relevant data in the field of Boxing.
 
-For the purpose of the project  designed and implemented an object-oriented web Single Page Application (SPA). The "The Style of Boxing" was developed with  by using:
+For the purpose of the project  designed and implemented an object-oriented web Single Page Application (SPA). "The Style of Boxing" was developed by using:
 - Webpack (with built-in minification, uglification),
 - jQuery,
 - Handlebars,
