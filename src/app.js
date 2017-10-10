@@ -17,20 +17,10 @@ const CategoryBasicsPage = () => System.import('./core/controllers/basics').then
 const CategoryTechniquesPage = () => System.import('./core/controllers/techniques').then(module => module.default());
 const CategoryTrainingPage = () => System.import('./core/controllers/training').then(module => module.default());
 const CategoryStrategyPage = () => System.import('./core/controllers/strategy').then(module => module.default());
-const PostPage = () => System.import('./core/controllers/post').then(module => module.default());
+
 
 
 const router = new Navigo();
-
-// router
-// .on('/user/:id/:action', function (params, query) {
-//   // If we have http://site.com/user/42/save?answer=42 as a url then
-//   // params.id = 42
-//   // params.action = save
-//   // query = answer=42
-// })
-// .resolve();
-
 
 router
     .on('/', HomePage)
@@ -49,7 +39,7 @@ router
 $(window).on('load', () => {
     $(document).on('click', '[data-path]', (e) => {
         e.preventDefault();
-        // console.log($(e.target).attr('href'));
+        console.log($(e.target).attr('href'));
         //   console.log(params);
         router.navigate($(e.target).attr('href'));
     });

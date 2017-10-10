@@ -109,14 +109,12 @@
                     color: #8e8e8e;
                     padding-left: 1px;
                 }
-
             }
         } // MAiN
         .main {
             .container {
                 max-width: 1540px;
                 min-height: 836px;
-
                 .articles {
                     // float: left;
                     max-width: 1250px;
@@ -126,7 +124,6 @@
                         height: 360px;
                         padding-right: 240px;
                         margin-bottom: 26px;
-                        text-decoration: none;
                         .article {
                             width: 230px;
                             position: absolute;
@@ -134,6 +131,7 @@
                             overflow: hidden;
                             text-overflow: clip;
                             .top {
+
                                 width: 224px;
                                 height: 180px;
                                 position: relative;
@@ -188,6 +186,11 @@
                                     border-bottom: 1px dotted rgba(0, 0, 0, 0.35);
                                     h1 {
                                         padding: 12px 0 0 16px;
+                                        .post-id{
+                                            color: $red;
+                                            text-decoration: none;
+                                        }
+
                                     }
                                     h3 {
                                         padding: 2px 0 0 16px;
@@ -226,7 +229,6 @@
                     @media (max-width: 575px) {
                         display: none;
                     } // float: right;
-
                     .recent-comments,
                     .recent-posts {
                         width: 230px;
