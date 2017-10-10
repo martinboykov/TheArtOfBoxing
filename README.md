@@ -38,7 +38,7 @@ The Web Application consists of the following sections:
 ### Post section, where you can add your comment to a specific Post
 
 ### Architecture of the Application
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/martinboykov/TheStyleOfBoxing/blob/master/src/assets/images/Architecture.png)
 
 
 
