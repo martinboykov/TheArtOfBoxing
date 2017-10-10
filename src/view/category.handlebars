@@ -5,7 +5,7 @@
             <div class="header-top">
                 <div class="logo">
                     <!-- <a href="home" data-path title="The Style"><span class="white">The</span><span class=" gold">Style</span></a> -->
-                    <a href="home" data-path title="The Style Of Boxing"><span class="white">The</span> <span class=" gold">Style</span> <span class="white">Of</span> <span class=" gold">Boxing</span></a>
+                    <a href="/home" data-path title="The Style Of Boxing"><span class="white">The</span> <span class=" gold">Style</span> <span class="white">Of</span> <span class=" gold">Boxing</span></a>
                 </div>
             </div>
             <div class="header-bottom">
@@ -35,7 +35,7 @@
                     <div class="col-auto">
                         <!-- search -->
                         <div class="search-field">
-                            <!-- <img src="./images/search-icon.png" alt=""> -->
+                            <!-- <img src="./post/images/search-icon.png" alt=""> -->
                             <i class="glyphicon glyphicon-search"></i>
                             <label for="input">Search this website...</label>
                             <input type="text" class="form-control" />
@@ -62,31 +62,33 @@
                         <section class="articles">
                             <div class="row"> {{#each posts}}
                                 <div class="content content-1   col-lg-2 col-md-3 col-sm-4 col-6">
-                                    <article class="article">
-                                        <div class="top">
-                                            <div class=" category text-center">
-                                                <h2 class="white">{{category}}</h2>
-                                            </div>
-                                            <div class=" month white">
-                                                <h2 class="date white">{{month}}</h2>
-                                            </div>
-                                            <div class=" day white">
-                                                <h2 class="date white">{{day}}</h2>
-                                            </div>
+                                        <a href="/post/:{{id}}" data-path class="post-id">Link</a>
+                                        <article class="article">
+                                            <div class="top">
+                                                <div class=" category text-center">
+                                                    <h2 class="white">{{category}}</h2>
+                                                </div>
+                                                <div class=" month white">
+                                                    <h2 class="date white">{{month}}</h2>
+                                                </div>
+                                                <div class=" day white">
+                                                    <h2 class="date white">{{day}}</h2>
+                                                </div>
 
 
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="dotted">
-                                                <h1 class="red">{{title}}</h1>
-                                                <h3 class="black">posted by {{author}}</h3>
                                             </div>
-                                            <div class="dashed">
-                                                <div class="text">{{{content}}}</div>
-                                                <img src="./images/border-dashed.png" alt="">
+                                            <div class="bottom">
+                                                <div class="dotted">
+                                                    <h1 class="red">{{title}}</h1>
+                                                    <h3 class="black">posted by {{author}}</h3>
+                                                </div>
+                                                <div class="dashed">
+                                                    <div class="text">{{{content}}}</div>
+                                                    <img src="./post/images/border-dashed.png" alt="">
+                                                </div>
                                             </div>
-                                        </div>
-                                    </article>
+                                        </article>
+
                                 </div>
                                 {{/each}}
                             </div>
@@ -108,7 +110,7 @@
                                         <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
                                     </ul>
                                 </div>
-                                <img src="./images/border-dashed.png" alt="">
+                                <img src="./post/images/border-dashed.png" alt="">
                             </div>
                             <div class="recent-posts">
                                 <div class="dotted ">
@@ -124,7 +126,7 @@
                                         <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
                                     </ul>
                                 </div>
-                                <img src="./images/border-dashed.png" alt="">
+                                <img src="./post/images/border-dashed.png" alt="">
                             </div>
                         </div>
                     </div>

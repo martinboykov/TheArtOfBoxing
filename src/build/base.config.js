@@ -87,7 +87,7 @@ const config = {
                 loader: 'url-loader',
                 query: {
                     limit: 100,
-                    name: 'images/[name].[ext]'
+                    name: 'post/images/[name].[ext]'
                 }
             },
             {

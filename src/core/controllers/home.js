@@ -19,6 +19,7 @@ export default () => {
     query.on("value", snap => {
         const posts = (snap.val());
         console.log(posts);
+        console.log('home loaded');
         $('#app').html(compile(template)({
             posts
         }));

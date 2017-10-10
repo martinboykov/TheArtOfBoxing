@@ -1,5 +1,7 @@
 import $ from 'jquery';
-import { compile } from 'handlebars';
+import {
+    compile
+} from 'handlebars';
 import template from '../../view/post.handlebars';
 import '../../assets/images/big-border-top.png';
 import '../../assets/images/medium-border-top-article.png';
@@ -20,15 +22,24 @@ import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
 
-export default () => {
-    const db = firebase.database().ref("basics/100003");
+import Navigo from 'navigo';
 
-    db.on("value", snap => {
+export default (id) => {
+
+    const db = firebase.database().ref(`Posts/${id}`);
+
+    return db.on("value", snap => {
         const post = (snap.val());
         const category = post.category;
-        console.log(post);
+        const title = post.title;
+        console.log(post.id);
         $('#app').html(compile(template)({
-            post, category
+            post,
+            category,
+            title
         }));
     });
-};
+}
+
+
+
