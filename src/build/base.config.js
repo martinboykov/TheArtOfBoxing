@@ -1,7 +1,7 @@
 // Define this constant for easier usage
 const isProd = process.env.NODE_ENV === 'production';
 // const processCss = isProd ? '!postcss-loader' : ''; // autoprefixer only in ENV === 'production'
-const processCss =  '!postcss-loader' ; // autoprefixer  in ENV === 'production' and ENV === 'development'
+const processCss = '!postcss-loader'; // autoprefixer  in ENV === 'production' and ENV === 'development'
 
 const {
     resolve
@@ -14,7 +14,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const config = {
     // Include source maps in development files
-    devtool: isProd ? false : '#cheap-module-source-map', // source-map only in ENV === 'development'
+    // devtool: isProd ? false : '#cheap-module-source-map', // source-map only in ENV === 'development'
 
     entry: {
         // Main entry point of our app
@@ -130,6 +130,18 @@ const config = {
         new ExtractTextPlugin({
             filename: 'style.[hash].css',
             disable: !isProd,
+        }),
+        new webpack.ContextReplacementPlugin(/^\.\/locale$/, context => {
+            if (!/\/moment\//.test(context.context)) {
+                return;
+            }
+            // context needs to be modified in place
+            Object.assign(context, {
+                // include only CJK
+                regExp: /^\.\/(ja|ko|zh)/,
+                // point to the locale data folder relative to moment's src/lib/locale
+                request: '../../locale'
+            })
         }),
     ],
 };

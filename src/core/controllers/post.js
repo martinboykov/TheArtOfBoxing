@@ -17,6 +17,7 @@ import '../../assets/images/right-main-section-bottom.png';
 import {
     Comment
 } from '../models/comment.model';
+import moment from 'moment';
 
 // This import loads the firebase namespace along with all its type information.
 import * as firebase from 'firebase/app';
@@ -32,11 +33,13 @@ function post(id) {
         const post = (snap.val());
         const category = post.category;
         const title = post.title;
+
         console.log(post.id);
         $('#app').html(compile(template)({
             post,
             category,
             title
+
         }));
     });
 
@@ -71,11 +74,17 @@ function comment(id) {
 
         const content = $('#content').val();
         console.log(content);
-        const postedAt = firebase.database.ServerValue.TIMESTAMP;
-        //take the values from the form, and put them in an object
-        let newComment = new Comment(author, content, postedAt);
+        const timestamp = firebase.database.ServerValue.TIMESTAMP;
+        console.log(timestamp);
+        var month = moment().format("MMM");
+        var day = moment().format("DD");
+        console.log(month);
+        console.log(day);
 
-        console.log(newComment);
+        //take the values from the form, and put them in an object
+        let newComment = new Comment(author, content, day, month);
+
+
 
         //put new object in data array
         data.push(newComment);
