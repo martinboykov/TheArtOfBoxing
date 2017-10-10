@@ -33,7 +33,7 @@ router
         const id = +params.id.substr(1);
         console.log(id);
         post(id);
-        comment(id)
+        comment(id);
     })
     .resolve();
 

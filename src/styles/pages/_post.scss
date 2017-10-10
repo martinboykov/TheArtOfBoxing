@@ -327,7 +327,7 @@
                             .avatar {
                                 position: relative;
                                 float: left;
-                                top: 26px; // bottom: 66px;
+                                // top: 26px; // bottom: 66px;
                                 img {
                                     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 1) inset;
                                 }
@@ -377,18 +377,16 @@
                             .author {
                                 max-width: 344px;
                                 height: 39px;
-                                &:hover, &:active, &:visited{
-                                    border: $red;
-                                    box-shadow: $red;
-                                }
+                                color: $grey;
+                                font-size: 13px;
+
                             }
                             .textarea {
                                 max-width: 570px;
                                 height: 156px;
-                                &:hover, &:active, &:visited{
-                                    border: $red;
-                                 box-shadow: $red;
-                                }
+                                color: $grey;
+                                font-size: 13px;
+
                             }
                             .submit-button {
                                 margin-top: 14px;
