@@ -2,23 +2,21 @@
 
 ## ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)   ![Telerik](https://github.com/martinboykov/Telerik_Academy/blob/master/images/telerik-academy-logo.jpg)   ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)  ![star](https://github.com/martinboykov/Telerik_Academy/blob/master/images/star23.jpg)
 
-<h1 align="center">Library - Single Page JavaScript Applications created by Team "Orc"</h1>
+<h1 align="center">The Style of Boxing - Single Page JavaScript Applications created by Martin Martinov</h1>
 
-<h3> Team "Orc" - Team members</h3>
+
 
 
 | Name                                     | User Name                                                          |
-| ------------------------------------------- | ------------------------------------------------------------------ |
-| [Jordan Dimitrov](https://github.com/dadanchi) | [dadanchi](http://telerikacademy.com/Users/dadanchihttp://telerikacademy.com/Users/dadanchi)                                             |
-| [Lazar Lyutakov](https://github.com/lazarlyutakov) | [lazarlyutakov](http://telerikacademy.com/Users/lazarlyutakov)                                             |
+
 | [Martin Martinov ](https://github.com/martinboykov) | [martinboykov](http://telerikacademy.com/Users/martinboykov)                                             |
 
-##<a href="https://github.com/TelerikAcademy/JavaScript-Applications/blob/master/Teamwork/README.md">Project Requirements</a>
+##<a href="https://github.com/TelerikAcademy/Slice-and-Dice/blob/master/Course-Project/README.md">Project Requirements</a>
 
 ##Project Discription
-"Library" is a virtual library where you can find all favourite books of your interest and store them in your account for easy access and further reading.
+"The Style of Boxing" is a blog where you can find relevant data in the field of Boxing.
 
-For the purpose of our project we designed and implemented an object-oriented web Single Page Application (SPA). The "Library" was developed with  jQuery, Firebase, Handlebars, Navigo and Bootstrap.
+For the purpose of the project  designed and implemented an object-oriented web Single Page Application (SPA). The "The Style of Boxing" was developed with  jQuery, Firebase, Handlebars, Navigo and Bootstrap.
 
 The Web Application consists of the following sections:
 
