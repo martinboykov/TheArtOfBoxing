@@ -131,7 +131,6 @@
                             overflow: hidden;
                             text-overflow: clip;
                             .top {
-
                                 width: 224px;
                                 height: 180px;
                                 position: relative;
@@ -186,11 +185,10 @@
                                     border-bottom: 1px dotted rgba(0, 0, 0, 0.35);
                                     h1 {
                                         padding: 12px 0 0 16px;
-                                        .post-id{
+                                        .post-id {
                                             color: $red;
                                             text-decoration: none;
                                         }
-
                                     }
                                     h3 {
                                         padding: 2px 0 0 16px;

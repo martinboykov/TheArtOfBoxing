@@ -45,3 +45,5 @@ $(window).on('load', () => {
         router.navigate($(e.target).attr('href'));
     });
 });
+
+export const id = +params.id.substr(1);

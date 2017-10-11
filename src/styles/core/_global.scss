@@ -15,11 +15,11 @@ html {
     font-size: 62.5%; // @include box-sizing(border-box);
 }
 
-*,
-*:before,
-*:after {
-    // @include box-sizing(inherit);
-}
+// *,
+// *:before,
+// *:after {
+//     // @include box-sizing(inherit);
+// }
 
 body {
     @include font-default();

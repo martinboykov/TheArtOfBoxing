@@ -38,7 +38,8 @@ function post(id) {
         $('#app').html(compile(template)({
             post,
             category,
-            title
+            title,
+            id
 
         }));
     });
@@ -58,7 +59,7 @@ function comment(id) {
         console.log(snapshot.val());
         //when the data updates at firebase, put it in the data variable
         data = snapshot.val();
-    })
+    });
     //Entire Form (handler)
     $('#newComment').submit(function (event) {
 
@@ -70,21 +71,12 @@ function comment(id) {
 
         //get values to send to Firebase
         const author = $('#author').val();
-        console.log(author);
-
         const content = $('#content').val();
-        console.log(content);
         const timestamp = firebase.database.ServerValue.TIMESTAMP;
-        console.log(timestamp);
-        var month = moment().format("MMM");
-        var day = moment().format("DD");
-        console.log(month);
-        console.log(day);
-
+        const month = moment().format("MMM");
+        const day = moment().format("DD");
         //take the values from the form, and put them in an object
         let newComment = new Comment(author, content, day, month);
-
-
 
         //put new object in data array
         data.push(newComment);
@@ -92,14 +84,18 @@ function comment(id) {
 
         //send the new data to Firebase
         db.set(data, function (err) {
+
             if (err) {
                 alert("Data no go");
             }
-        });
+        })
+        .then(()=> {
+            post(id);
+        })
 
         return false;
     });
-};
+}
 
 
 export {
