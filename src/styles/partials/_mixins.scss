@@ -52,6 +52,14 @@
     /* IE6-9 */
 }
 
+$grid-breakpoints: ( // Extra small screen / phone
+xs: 0, // Small screen / phone
+sm: 500px, // Medium screen / tablet
+md: 768px, // Large screen / desktop
+lg: 992px, // Extra large screen / wide desktop
+xl: 1450px);
+
+
 @mixin media-query-post() {
     @media (max-width: 1200px) {
         align-self: auto;
@@ -76,12 +84,13 @@
         width: 350px;
     }
 }
+
 @mixin media-query-content() {
     @media (max-width: 1200px) {
         padding-left: 15px;
     }
-
 }
+
 @mixin media-query-logo() {
     @media (max-width: 1200px) {
         font-size: 120px;
@@ -171,6 +180,7 @@
     //     font-size: 100px;
     // }
 }
+
 @mixin media-query-small-nav() {
     @media (max-width: 1500px) {
         margin: 10px 0 0 53px;

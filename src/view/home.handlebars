@@ -53,42 +53,40 @@
 
         <main class="main" role="main">
             <div class="container">
-                <section class="articles">
-                    <div class="row"> {{#each posts}}
-                        <div class="content content-1   col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="row"> {{#each posts}}
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 ">
 
-                            <article class="article">
-                                <a href="#" class="post-id">
+                        <article class="container">
+                            <a href="#" class="post-id">
                                     <a href="/post/:{{id}}" data-path ></a>
-                                <div class="top">
-                                    <div class=" category text-center">
-                                        <h2 class="white">{{category}}</h2>
-                                    </div>
-                                    <div class=" month white">
-                                        <h2 class="date white">{{month}}</h2>
-                                    </div>
-                                    <div class=" day white">
-                                        <h2 class="date white">{{day}}</h2>
-                                    </div>
+                            <div class="top">
+                                <div class=" category text-center">
+                                    <h2 class="white">{{category}}</h2>
                                 </div>
-                                </a>
-                                <div class="bottom">
-                                    <div class="dotted">
-                                        <h1 class="red"><a href="/post/:{{id}}" data-path class="post-id">{{title}}</a></h1>
-                                        <h3 class="black">posted by {{author}}</h3>
-                                    </div>
-                                    <div class="dashed">
-                                        <div class="text">{{{content}}}</div>
-                                        <img src="./post/images/border-dashed.png" alt="">
-                                    </div>
+                                <div class=" month white">
+                                    <h2 class="date white">{{month}}</h2>
                                 </div>
+                                <div class=" day white">
+                                    <h2 class="date white">{{day}}</h2>
+                                </div>
+                            </div>
+                            </a>
+                            <div class="bottom">
+                                <div class="dotted">
+                                    <h1 class="red"><a href="/post/:{{id}}" data-path class="post-id">{{title}}</a></h1>
+                                    <h3 class="black">posted by {{author}}</h3>
+                                </div>
+                                <div class="dashed">
+                                    <div class="text">{{{content}}}</div>
 
-                            </article>
+                                </div>
+                            </div>
+                            <img src="./post/images/border-dashed.png" alt="">
+                        </article>
 
-                        </div>
-                        {{/each}}
                     </div>
-                </section>
+                    {{/each}}
+                </div>
                 <div class="pagination">
                     <!-- to implement: http://esimakin.github.io/twbs-pagination/ and/or
             https://github.com/flaviusmatis/simplePagination.js -->

@@ -12,14 +12,15 @@
 //     text-shadow: 0px 1px 1px rgba(black, 0.6);
 // }
 html {
-    font-size: 62.5%; // @include box-sizing(border-box);
+    font-size: 62.5%; //
+    box-sizing : border-box;
 }
 
-// *,
-// *:before,
-// *:after {
-//     // @include box-sizing(inherit);
-// }
+*,
+*:before,
+*:after {
+    box-sizing : inherit;
+}
 
 body {
     @include font-default();

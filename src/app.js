@@ -31,7 +31,6 @@ router
     .on('/strategy', CategoryStrategyPage)
     .on('/post/:id', function (params) {
         const id = +params.id.substr(1);
-        console.log(id);
         post(id);
         comment(id);
     })
@@ -46,4 +45,3 @@ $(window).on('load', () => {
     });
 });
 
-export const id = +params.id.substr(1);

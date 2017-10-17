@@ -98,116 +98,110 @@
         .main {
             .container {
                 max-width: 1540px;
-                .articles {
-                    margin-left: 2px;
-                    .content {
-                        width: 230px;
-                        height: 360px;
-                        padding-right: 220px;
-                        margin-bottom: 26px;
-                        .article {
-                            width: 230px;
-                            position: absolute;
-                            background-color: white;
+                // background-color: white;
+                article {
+                    background-color: white;
+                    height: 360px;
+                    width: 230px;
+                    margin-bottom: 26px;
+                    padding: 0;
+
+                    .top {
+                        width: 224px;
+                        height: 180px;
+                        margin: 3px 0px 0px 3px;
+                        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 1) inset;
+                        background: white; // display: inline-block;
+                        .category {
+                            float: right;
+                            clear: both;
+                            height: 34px;
+                            background-color: $red;
+                            h2 {
+                                padding: 0 9px 0 9px;
+                                line-height: 34px;
+                                text-shadow: 1px 1px 1px rgba(86, 10, 34, 1);
+                            }
+                        }
+                        .month {
+                            float: right;
+                            margin-top: 5px;
+                            margin-right: 7px;
+                            height: 48px;
+                            clear: both;
+                            h2 {
+                                color: white;
+                                font-size: 48px;
+                                line-height: 48px;
+                                text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+                            }
+                        }
+                        .day {
+                            float: right;
+                            margin-top: -7px;
+                            height: 48px;
+                            margin-right: 7px;
+                            clear: both;
+                            h2 {
+                                color: white;
+                                font-size: 48px;
+                                line-height: 48px;
+                                text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+                            }
+                        }
+                    }
+                    .bottom {
+                        background-color: white;
+                        .dotted {
+                            // background: red;
+
+                            min-height: 73px;
                             overflow: hidden;
                             text-overflow: clip;
-                            .top {
-                                width: 224px;
-                                height: 180px;
-                                position: relative;
-                                top: 3px;
-                                left: 3px;
-                                box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 1) inset;
-                                background: white;
-                                display: inline-block;
-                                .category {
-                                    float: right;
-                                    clear: both;
-                                    height: 34px;
-                                    background-color: $red;
-                                    h2 {
-                                        padding: 0 9px 0 9px;
-                                        line-height: 34px;
-                                        text-shadow: 1px 1px 1px rgba(86, 10, 34, 1);
-                                    }
-                                }
-                                .month {
-                                    float: right;
-                                    margin-top: 5px;
-                                    margin-right: 7px;
-                                    height: 48px;
-                                    clear: both;
-                                    h2 {
-                                        color: white;
-                                        font-size: 48px;
-                                        line-height: 48px;
-                                        text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
-                                    }
-                                }
-                                .day {
-                                    float: right;
-                                    margin-top: -7px;
-                                    height: 48px;
-                                    margin-right: 7px;
-                                    clear: both;
-                                    h2 {
-                                        color: white;
-                                        font-size: 48px;
-                                        line-height: 48px;
-                                        text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
-                                    }
+                            white-space: nowrap;
+                            border-bottom: 1px dotted rgba(0, 0, 0, 0.35);
+                            h1 {
+                                padding: 12px 0 0 16px;
+                                .post-id {
+                                    color: $red;
+                                    text-decoration: none;
                                 }
                             }
-                            .bottom {
-                                background-color: white;
-                                .dotted {
-                                    // background: red;
-                                    min-height: 73px;
-                                    border-bottom: 1px dotted rgba(0, 0, 0, 0.35);
-                                    h1 {
-                                        padding: 12px 0 0 16px;
-                                        .post-id{
-                                            color: $red;
-                                            text-decoration: none;
-                                        }
-                                    }
-                                    h3 {
-                                        padding: 2px 0 0 16px;
-                                    }
-                                }
-                                .dashed {
-                                    height: 94px;
-                                    clear: both;
-                                    .text {
-                                        height: 75px;
-                                        margin: 10px 0 0 16px;
-                                        line-height: 19px;
-                                        overflow: hidden;
-                                        text-overflow: clip;
-                                    }
-                                    img {
-                                        padding-top: 9px;
-                                        ;
-                                    }
-                                }
+                            h3 {
+                                padding: 2px 0 0 16px;
                             }
-                        } // &:nth-child(2) {
-                        //     margin-right: 255px;
-                        //     width: 460px;
-                        //     overflow: visible;
-                        //     .top {
-                        //         width: 460px;
-                        //     }
-                        //     .bottom {
-                        //         width: 460px;
-                        //     }
-                        // }
+                        }
+                        .dashed {
+                            height: 94px;
+                            clear: both;
+                            .text {
+                                height: 75px;
+                                margin: 10px 0 0 16px;
+                                line-height: 19px;
+                                overflow: hidden;
+                                text-overflow: clip;
+                            }
+
+                        }
+                    } // &:nth-child(2) {
+                    //     margin-right: 255px;
+                    //     width: 460px;
+                    //     overflow: visible;
+                    //     .top {
+                    //         width: 460px;
+                    //     }
+                    //     .bottom {
+                    //         width: 460px;
+                    //     }
+                    // }
+                    img {
+                        margin-top: -9px;
                     }
                 }
-                .pagination {
-                    height: 103px;
-                    margin: 0 auto;
-                }
+            }
+            .pagination {
+                height: 103px;
+                margin: 0 auto;
             }
         }
         .footer {
@@ -301,19 +295,15 @@
             .footer-bottom {
                 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.78);
                 width: 100%;
-
-
-
                 p {
                     margin-top: 52px;
                     margin-left: 1173px;
                     color: $dark-grey;
                     padding-bottom: 20px;
                     @media (max-width: 1500px) {
-                        margin-top:  52px;
+                        margin-top: 52px;
                         margin-left: 15px;
                     }
-
                     .bold {
                         color: #8c8c8c;
                     }
