@@ -3,17 +3,11 @@ import {
     compile
 } from 'handlebars';
 import template from '../../view/post.handlebars';
-import '../../assets/images/big-border-top.png';
-import '../../assets/images/medium-border-top-article.png';
-import '../../assets/images/medium-border-top-aside.png';
-import '../../assets/images/medium-border-bottom-comments.png';
-import '../../assets/images/small-border-right-aside.png';
 import '../../assets/icons/delicious-icon.png';
 import '../../assets/icons/digg-icon.png';
 import '../../assets/icons/facebook-icon.png';
 import '../../assets/icons/reddit-icon.png';
 import '../../assets/icons/twitter-icon.png';
-import '../../assets/images/right-main-section-bottom.png';
 import {
     Comment
 } from '../models/comment.model';

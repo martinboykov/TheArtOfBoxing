@@ -1,7 +1,8 @@
 import './styles/main.scss';
 import 'bootstrap';
 import './assets/favicon/favicon.ico';
-import './assets/images/border-dashed.png';
+import './assets/images/border.png';
+import './assets/images/border.svg';
 import {post, comment} from './core/controllers/post';
 
 import config from '../src/core/data/firebase';

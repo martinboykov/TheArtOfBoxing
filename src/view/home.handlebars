@@ -5,7 +5,7 @@
             <div class="header-top">
                 <div class="logo">
                     <!-- <a href="home" data-path title="The Style"><span class="white">The</span><span class=" gold">Style</span></a> -->
-                    <a href="home" data-path title="The Style Of Boxing"><span class="white">The</span> <span class=" gold">Style</span> <span class="white">Of</span> <span class=" gold">Boxing</span></a>
+                    <a href="/home" data-path title="The Style Of Boxing"><span class="white">The</span><span class=" gold">Style</span><span class="white">Of</span><span class=" gold">Boxing</span></a>
                 </div>
             </div>
             <div class="header-bottom">
@@ -35,7 +35,6 @@
                     <div class="col-auto">
                         <!-- search -->
                         <div class="search-field">
-                            <!-- <img src="./post/images/search-icon.png" alt=""> -->
                             <i class="glyphicon glyphicon-search"></i>
                             <label for="input">Search this website...</label>
                             <input type="text" class="form-control" />
@@ -76,8 +75,10 @@
                             <div class="bottom">
                                 <div class="dotted">
                                     <div class="wrapper-bottom">
-                                        <h1 class="red"><a href="/post/:{{id}}" data-path class="post-id">{{title}}</a></h1>
-                                        <h3 class="black">posted by {{author}}</h3>
+                                        <div class="bottom-main">
+                                            <h1 class="red"><a href="/post/:{{id}}" data-path class="post-id">{{title}}</a></h1>
+                                            <h3 class="black">posted by {{author}}</h3>
+                                        </div>
                                     </div>
                                     <div class="dashed">
                                         <div class="text">{{{content}}}</div>
@@ -85,7 +86,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <img src="./post/images/border-dashed.png" alt="">
+                            <!-- <img src="./post/images/border.png" alt=""> -->
                         </article>
 
                     </div>

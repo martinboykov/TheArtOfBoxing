@@ -86,8 +86,8 @@ const config = {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 loader: 'url-loader',
                 query: {
-                    limit: 100,
-                    name: 'post/images/[name].[ext]'
+                    limit: 10000,
+                    name: 'images/[name].[ext]'
                 }
             },
             {
@@ -104,7 +104,7 @@ const config = {
                 test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
                 loader: 'url-loader',
                 options: {
-                    limit: 100,
+                    limit: 10000,
                     name: 'fonts/[name].[hash:7].[ext]'
                 }
             },

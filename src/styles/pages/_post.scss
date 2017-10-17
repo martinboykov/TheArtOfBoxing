@@ -144,6 +144,9 @@
                                 display: none;
                                 width: 0px;
                             }
+                            border-top: 9px solid transparent;
+                            border-bottom: 9px solid transparent;
+                            border-image: url('./images/border.png') 33.333% 0 33.333% 0 round;
                             float: left;
                             position: relative;
                             min-height: 684px;
@@ -271,6 +274,9 @@
                             min-height: 684px;
                             width: 944px;
                             background-color: white;
+                            border-top: 9px solid transparent;
+                            border-bottom: 9px solid transparent;
+                            border-image: url('./images/border.png') 33.333% 0 33.333% 0 round;
                             @include media-query-post;
                             .dotted {
                                 // background: red;
@@ -312,6 +318,9 @@
                         width: 971px;
                         float: right;
                         position: relative;
+                        border-top: 9px solid transparent;
+                        border-bottom: 9px solid transparent;
+                        border-image: url('./images/border.png') 33.333% 0 33.333% 0 round;
                         .title {
                             margin: 12px 0 0 20px;
                             height: 80px;
@@ -420,11 +429,13 @@
                     }
                     .recent-popular-random {
                         width: 378px;
-                        height: 337px;
+                        min-height: 337px;
                         position: relative;
                         background-color: #e7e7e7;
                         margin-bottom: 16px;
                         text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+                        border-bottom: 9px solid transparent;
+                        border-image: url('./images/border.png') 0 0 33.333% 0 round;
                         .controls {
                             width: 378px;
                             @include clearfix;
@@ -500,10 +511,6 @@
                                 }
                             }
                         }
-                        .right-main-section-bottom {
-                            position: absolute;
-                            bottom: 1px;
-                        }
                     }
                     .custom-widget {
                         position: relative;
@@ -512,6 +519,8 @@
                         background-color: #e7e7e7;
                         margin-bottom: 16px;
                         text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+                        border-bottom: 9px solid transparent;
+                        border-image: url('./images/border.png') 0 0 33.333% 0 round;
                         .dotted {
                             height: 59px;
                             line-height: 59px;
@@ -538,10 +547,7 @@
                                 line-height: 19px;
                             }
                         }
-                        .right-main-section-bottom {
-                            position: absolute;
-                            bottom: 1px;
-                        }
+
                     }
                 }
             }

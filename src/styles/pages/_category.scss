@@ -114,24 +114,25 @@
         .main {
             .container {
                 max-width: 1540px; // min-height: 836px;
+
                 .section {
                     // float: left;
                     max-width: 1250px; // margin-left: 3px;
+                    .col-xl-auto {
+                        margin-bottom: 26px;
+                    }
                     .article {
-                        background-color: white;
                         height: 360px;
+                        padding: 3px 3px 0 3px;
+                        background-color: white;
+                        border-bottom: 9px solid transparent;
+                        border-image: url('./images/border.png') 0 0 33.333% 0 round;
                         @media (max-width: 1400px) {
                             min-width: 230px;
                         }
                         @media (min-width: 1401px) {
                             width: 230px;
                         }
-
-                        // margin: 0;
-                        // padding: 0;
-                        padding: 3px 3px 0 3px;
-                        margin-bottom: 26px;
-                        // padding: 0;
                         .top {
                             min-width: 224px;
                             height: 180px;
@@ -209,19 +210,6 @@
                                     text-overflow: clip;
                                 }
                             }
-                        } // &:nth-child(2) {
-                        //     margin-right: 255px;
-                        //     width: 460px;
-                        //     overflow: visible;
-                        //     .top {
-                        //         width: 460px;
-                        //     }
-                        //     .bottom {
-                        //         width: 460px;
-                        //     }
-                        // }
-                        img {
-                            // margin-top: -9px;
                         }
                     }
                 }
@@ -229,7 +217,7 @@
                     float: right;
                     @media (max-width: 575px) {
                         display: none;
-                    } // float: right;
+                    }
                     .recent-comments,
                     .recent-posts {
                         width: 230px;
@@ -238,6 +226,8 @@
                         margin-bottom: 23px;
                         text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
                         box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 1);
+                        border-bottom: 9px solid transparent;
+                        border-image: url('./images/border.png') 0 0 33.333% 0 round;
                         .dotted {
                             height: 59px;
                             line-height: 59px;
