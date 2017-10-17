@@ -101,13 +101,14 @@
                 article {
                     background-color: white;
                     height: 360px;
-                    width: 230px;
+                    min-width: 230px;
+                    padding: 3px 3px 0 3px;
                     margin-bottom: 26px;
-                    padding: 0;
+
                     .top {
-                        width: 224px;
+                        min-width: 224px;
                         height: 180px;
-                        margin: 3px 0px 0px 3px;
+                        //margin: 3px 0px 0px 3px;
                         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 1) inset;
                         background: white; // display: inline-block;
                         .category {

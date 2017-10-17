@@ -58,12 +58,13 @@
         <main class="main" role="main">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-10 col-md-8 col-sm-6 ">
-                        <section class="articles">
+                    <div class="col-lg-9 col-md-8 col-sm-6 ">
+                        <section class="section">
                             <div class="row"> {{#each posts}}
-                                <div class="content content-1   col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="col-xl-auto col-lg-4 col-md-6 col-sm-12 ">
 
                                     <article class="article">
+
 
                                         <div class="top">
 
@@ -77,18 +78,21 @@
                                                 <h2 class="date white">{{day}}</h2>
                                             </div>
 
-
                                         </div>
+
                                         <div class="bottom">
                                             <div class="dotted">
-                                                <h1 class="red"><a href="/post/:{{id}}" data-path class="post-id">{{title}}</a></h1>
-                                                <h3 class="black">posted by {{author}}</h3>
-                                            </div>
-                                            <div class="dashed">
-                                                <div class="text">{{{content}}}</div>
-                                                <img src="./post/images/border-dashed.png" alt="">
+                                                <div class="wrapper-bottom">
+                                                    <h1 class="red"><a href="/post/:{{id}}" data-path class="post-id">{{title}}</a></h1>
+                                                    <h3 class="black">posted by {{author}}</h3>
+                                                </div>
+                                                <div class="dashed">
+                                                    <div class="text">{{{content}}}</div>
+
+                                                </div>
                                             </div>
                                         </div>
+                                        <img src="./post/images/border-dashed.png" alt="">
                                     </article>
 
                                 </div>
@@ -96,7 +100,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 ">
+                    <div class="col-lg-3 col-md-4 col-sm-6 ">
                         <div class="right-section">
                             <div class="recent-comments">
                                 <div class="dotted ">
@@ -199,7 +203,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                    <p>Designed by <span class="bold">Martin Martinov</span> | Powered by <span class="bold">Teleric Academy</span></p>
+                <p>Designed by <span class="bold">Martin Martinov</span> | Powered by <span class="bold">Teleric Academy</span></p>
             </div>
         </footer>
     </div>
