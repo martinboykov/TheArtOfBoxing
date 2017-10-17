@@ -22,19 +22,21 @@ import 'firebase/database';
 function post(id) {
 
     const db = firebase.database().ref(`Posts/${id}`);
-
-    return db.on("value", snap => {
+    db.on("value", snap => {
         const post = (snap.val());
         const category = post.category;
         const title = post.title;
+        const commentsAll = post.comments;
+        console.log(commentsAll.length);
+        const comments = commentsAll.slice(commentsAll.length - 4, commentsAll.length);
 
-        console.log(post.id);
+        console.log(comments);
         $('#app').html(compile(template)({
             post,
             category,
             title,
+            comments,
             id
-
         }));
     });
 
@@ -79,13 +81,13 @@ function comment(id) {
         //send the new data to Firebase
         db.set(data, function (err) {
 
-            if (err) {
-                alert("Data no go");
-            }
-        })
-        .then(()=> {
-            post(id);
-        })
+                if (err) {
+                    alert("Data no go");
+                }
+            })
+            .then(() => {
+                post(id);
+            })
 
         return false;
     });

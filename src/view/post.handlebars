@@ -157,11 +157,10 @@
                             <h1 class="red">Leave a comment</h1>
                             <form action="POST" id="newComment">
                                 <div class="form-group">
-                                    <input type="text" name="author" id="author" class="form-control author grey"  required>
+                                    <input type="text" name="author" id="author" class="form-control author grey" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea rows="14" cols="30" id="content" class="form-control textarea grey" name="content"
-                                        required >
+                                    <textarea rows="14" cols="30" id="content" class="form-control textarea grey" name="content" required>
                                     </textarea>
                                 </div>
 
@@ -185,19 +184,19 @@
                             </a>
                         </div>
                         <div class="posts ">
-                            {{#each post.comments}}
+                            {{#each comments}}
                             <div class="post ">
                                 <div class="avatar ">
-                                    <img src={{this.avatar}} alt="avatar">
+                                    <img src={{avatar}} alt="avatar">
                                     <div class="frame-border">
                                     </div>
 
                                 </div>
                                 <div class="text ">
-                                    <p class="title">
-                                        Fusce suscipit sapien sit amet
-                                    </p>
-                                    <p class="additional-info">Posted by {{this.author}} on {{this.month}} {{this.day}}</p>
+                                    <div class="title">
+                                        <p>{{content}}</p>
+                                    </div>
+                                    <div class="additional-info">Posted by {{author}} on {{month}} {{day}}</div>
                                 </div>
                             </div>
                             {{/each}}
@@ -291,7 +290,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                    <p>Designed by <span class="bold">Martin Martinov</span> | Powered by <span class="bold">Teleric Academy</span></p>
+                <p>Designed by <span class="bold">Martin Martinov</span> | Powered by <span class="bold">Teleric Academy</span></p>
             </div>
         </footer>
     </div>
