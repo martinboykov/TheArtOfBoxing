@@ -130,24 +130,24 @@
                             <h1 class="red">{{post.comments.length}} <span>&nbsp;</span> Comments </h1>
                         </div>
                         <div class="comments ">
-                            {{#each post.comments}}
+                            {{#each comments}}
                             <div class="comment ">
                                 <div class="avatar ">
-                                    <img src={{this.avatar}} alt="avatar">
+                                    <img src={{avatar}} alt="avatar">
                                     <div class="frame-border">
                                     </div>
                                     <div class=" month white">
-                                        <h2 class="date white">{{this.month}}</h2>
+                                        <h2 class="date white">{{month}}</h2>
                                     </div>
                                     <div class=" day white">
-                                        <h2 class="date white">{{this.day}}</h2>
+                                        <h2 class="date white">{{day}}</h2>
                                     </div>
 
                                 </div>
                                 <div class="text ">
-                                    <h2 class="black">{{this.author}}</h2>
+                                    <h2 class="black">{{author}}</h2>
                                     <div class="content">
-                                        {{this.content}}
+                                        {{content}}
                                     </div>
                                 </div>
                             </div>

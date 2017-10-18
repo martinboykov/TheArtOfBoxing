@@ -21,9 +21,17 @@ function post(id) {
         const post = (snap.val());
         const category = post.category;
         const title = post.title;
-        const commentsAll = post.comments;
-        console.log(commentsAll.length);
-        const comments = commentsAll.slice(commentsAll.length - 4, commentsAll.length);
+        const comments = post.comments;
+        // const commentsAll = post.comments;
+        // console.log(commentsAll.length);
+        // let comments = [];
+        // console.log(comments);
+        // if (commentsAll.length !== 0) {
+        //     console.log(commentsAll.length);
+        //     let comments = commentsAll.slice(commentsAll.length - 4, commentsAll.length);
+        // }
+
+
 
         console.log(comments);
         $('#app').html(compile(template)({
