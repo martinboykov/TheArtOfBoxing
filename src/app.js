@@ -1,9 +1,12 @@
 import './styles/main.scss';
 import 'bootstrap';
 import './assets/favicon/favicon.ico';
-import './assets/images/border.png';
-import './assets/images/border.svg';
 import {post, comment} from './core/controllers/post';
+import './assets/icons/delicious-icon.png';
+import './assets/icons/digg-icon.png';
+import './assets/icons/facebook-icon.png';
+import './assets/icons/reddit-icon.png';
+import './assets/icons/twitter-icon.png';
 
 import config from '../src/core/data/firebase';
 

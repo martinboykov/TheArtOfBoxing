@@ -3,11 +3,6 @@ import {
     compile
 } from 'handlebars';
 import template from '../../view/post.handlebars';
-import '../../assets/icons/delicious-icon.png';
-import '../../assets/icons/digg-icon.png';
-import '../../assets/icons/facebook-icon.png';
-import '../../assets/icons/reddit-icon.png';
-import '../../assets/icons/twitter-icon.png';
 import {
     Comment
 } from '../models/comment.model';

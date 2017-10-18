@@ -107,12 +107,13 @@
                     min-width: 230px;
                     padding: 3px 3px 0 3px;
                     border-bottom: 9px solid transparent;
-                    border-image: url('./images/border.png') 0 0 33.333% 0 round;
+                    border-image: url('https://firebasestorage.googleapis.com/v0/b/thestyleofboxing.appspot.com/o/border.png?alt=media&token=158ba72d-c698-4c89-a623-5660db86f96e') 0 0 33.333% 0 round;
                     .top {
+
                         min-width: 224px;
                         height: 180px;
                         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 1) inset;
-                        background: white;
+                        // background: white;
                         .category {
                             float: right;
                             clear: both;
