@@ -2,8 +2,9 @@
 @import 'partials/settings';
 @import 'partials/mixins';
 // Vendor Sass Files
-@import "~bootstrap/scss/bootstrap";
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+// @import "~bootstrap/scss/bootstrap";
+@import 'vendor/bootstrap/bootstrap.scss';
+// @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 @import 'vendor/ie/ie';
 @import 'vendor/spinner';
 // Core Setup Sass Files

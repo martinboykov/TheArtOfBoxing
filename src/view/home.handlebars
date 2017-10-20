@@ -2,64 +2,135 @@
     <div class="app-wrapper ">
         <!-- Header -->
         <header class="header">
-            <div class="header-top">
-                <div class="logo">
-                    <!-- <a href="home" data-path title="The Style"><span class="white">The</span><span class=" gold">Style</span></a> -->
-                    <a href="/home" data-path title="The Style Of Boxing"><span class="white">The</span><span class=" gold">Style</span><span class="white">Of</span><span class=" gold">Boxing</span></a>
-                </div>
-            </div>
-            <div class="header-bottom">
-                <div class="row">
-                    <div class="col-lg-8 mr-auto">
-                        <!-- navigation -->
-                        <nav class="navigation">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a href="/home" data-path class="nav-link active">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/basics" data-path class="nav-link">Basics</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/techniques" data-path class="nav-link">Techniques</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/training" data-path class="nav-link"> Training</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/strategy" data-path class="nav-link">Strategy</a>
-                                </li>
-                            </ul>
-                        </nav>
+            <div class="container">
+
+
+                <div class="header-top">
+                    <div class="logo">
+                        <!-- <a href="home" data-path title="The Style"><span class="white">The</span><span class=" gold">Style</span></a> -->
+                        <a href="/home"
+                           data-path
+                           title="The Style Of Boxing"><span class="white">The</span><span class=" gold">Style</span><span class="white">Of</span><span class=" gold">Boxing</span></a>
                     </div>
-                    <div class="col-auto">
-                        <!-- search -->
-                        <div class="search-field">
-                            <i class="glyphicon glyphicon-search"></i>
-                            <label for="input">Search this website...</label>
-                            <input type="text" class="form-control" />
+                </div>
+                <!-- <div class="header-bottom">
+                    <div class="row">
+                        <div class="col-lg-8 mr-auto">
+
+                            <nav class="navigation">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="/home"
+                                            data-path
+                                            class="nav-link active">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/basics"
+                                            data-path
+                                            class="nav-link">Basics</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/techniques"
+                                            data-path
+                                            class="nav-link">Techniques</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/training"
+                                            data-path
+                                            class="nav-link"> Training</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/strategy"
+                                            data-path
+                                            class="nav-link">Strategy</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-auto">
+
+                            <div class="search-field">
+                                <i class="glyphicon glyphicon-search"></i>
+                                <label for="input">Search this website...</label>
+                                <input type="text"
+                                    class="form-control" />
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <a href=""
+                    class="mobile-toggle"></a> -->
+                <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                    <div class="collapse navbar-collapse"
+                         id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link"
+                                   href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                   href="#"
+                                   id="navbarDropdown"
+                                   role="button"
+                                   data-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">
+                                    Dropdown
+                                  </a>
+                                <div class="dropdown-menu"
+                                     aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item"
+                                       href="#">Action</a>
+                                    <a class="dropdown-item"
+                                       href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item"
+                                       href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled"
+                                   href="#">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2"
+                                   type="search"
+                                   placeholder="Search"
+                                   aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0"
+                                    type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
             </div>
-
-            <!-- mobile -->
-            <a href="" class="mobile-toggle"></a>
-
         </header>
-
         <!-- Main -->
-
-        <main class="main" role="main">
+        <main class="main"
+              role="main">
             <div class="container">
                 <div class="row"> {{#each posts}}
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 ">
 
                         <article class="container">
-
-
                             <div class="top">
-
                                 <div class=" category text-center">
                                     <h2 class="white">{{category}}</h2>
                                 </div>
@@ -69,25 +140,23 @@
                                 <div class=" day white">
                                     <h2 class="date white">{{day}}</h2>
                                 </div>
-
                             </div>
-
                             <div class="bottom">
                                 <div class="dotted">
                                     <div class="wrapper-bottom">
                                         <div class="bottom-main">
-                                            <h1 class="red"><a href="post/:{{id}}" data-path class="post-id">{{title}}</a></h1>
+                                            <h1 class="red"><a href="post/:{{id}}"
+                                                   data-path
+                                                   class="post-id">{{title}}</a></h1>
                                             <h3 class="black">posted by {{author}}</h3>
                                         </div>
                                     </div>
                                     <div class="dashed">
                                         <div class="text">{{{content}}}</div>
-
                                     </div>
                                 </div>
                             </div>
                         </article>
-
                     </div>
                     {{/each}}
                 </div>
@@ -97,8 +166,6 @@
                 </div>
             </div>
         </main>
-
-
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-top">

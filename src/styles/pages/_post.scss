@@ -8,8 +8,8 @@
         max-width: 1656px;
         min-height: 1628px;
         margin: 0 auto;
-        box-sizing: border-box; // background-color: white;
-        @include gradient-post; // HEADER
+        box-sizing: border-box;
+        @include gradient-post;
         .header {
             height: 354px;
             /* Logo */
@@ -166,8 +166,7 @@
                                 top: 31px;
                                 left: 37px;
                                 box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 1) inset;
-                                // background: white;
-
+                                background: white;
                                 display: inline-block;
                                 .category {
                                     float: right;
@@ -468,7 +467,7 @@
                                 .frame-border {
                                     width: 42px;
                                     height: 42px;
-                                    background-color: #d6d6d6; // z-index: 999;
+                                    background-color: #d6d6d6;
                                     margin-top: -39px;
                                 }
                             }
@@ -476,7 +475,6 @@
                                 margin-left: 15px;
                                 margin-top: 15px;
                                 float: left;
-
                                 .title {
                                     width: 260px;
                                     color: $light-black;

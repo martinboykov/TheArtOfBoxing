@@ -5,20 +5,35 @@
         max-width: $full-width;
         min-height: 1628px;
         margin: 0 auto;
-        box-sizing: border-box;
         @include gradient-main; // background: #67CCCB;
-        // HEADER
+        .container {
+            max-width: 1540px;
+        } // HEADER
         .header {
-            height: 336px;
+            min-height: 336px;
             /* Logo */
-            @include media-query-header;
+            // @include media-query-header;
+            .navbar {
+                // @include gradient-main;
+                background: transparent !important;
+                .navbar-toggler {
+                    align-content: flex-end !important;
+                    border-color: $gold;
+                    color: $gold;
+                    span {
+                        color: $gold;
+                        .navbar-toggler-icon {
+                            background: $gold;
+                        }
+                    }
+                }
+            }
             .header-top {
                 padding-top: 101px;
-                padding-left: 67px;
-                @include media-query-header-top;
+                padding-left: 0px; // @include media-query-header-top;
                 .logo {
                     a {
-                        @include media-query-logo;
+                        // @include media-query-logo;
                         text-shadow: (1px 1px rgba(0, 0, 0, 1));
                         font-family: $font-yk;
                         font-size: 140px;
@@ -28,9 +43,8 @@
                 }
             }
             .header-bottom {
-                margin-top: 3px;
-                margin-left: 78px;
-                @include media-query-header-bottom;
+                padding-top: 3px;
+                padding-left: 0px; // @include media-query-header-bottom;.
                 .navigation {
                     .nav {
                         margin-top: 10px;
@@ -97,7 +111,7 @@
         } // MAiN
         .main {
             .container {
-                max-width: 1540px; // background-color: white;
+                max-width: 1540px;
                 .col-xl-2 {
                     margin-bottom: 26px;
                 }
@@ -109,11 +123,10 @@
                     border-bottom: 9px solid transparent;
                     border-image: url('https://firebasestorage.googleapis.com/v0/b/thestyleofboxing.appspot.com/o/border.png?alt=media&token=158ba72d-c698-4c89-a623-5660db86f96e') 0 0 33.333% 0 round;
                     .top {
-
                         min-width: 224px;
                         height: 180px;
                         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 1) inset;
-                        // background: white;
+                        background: white;
                         .category {
                             float: right;
                             clear: both;
@@ -238,7 +251,7 @@
                         margin-bottom: 11px;
                     }
                     p {
-                        margin-left: 2px; // padding-bottom: 12px;
+                        margin-left: 2px;
                         line-height: 17px;
                         text-justify: auto;
                     }
