@@ -5,7 +5,9 @@
             <div class="header-top">
                 <div class="logo">
                     <!-- <a href="home" data-path title="The Style"><span class="white">The</span><span class=" gold">Style</span></a> -->
-                    <a href="/home" data-path title="The Style Of Boxing"><span class="white">The</span><span class=" gold">Style</span><span class="white">Of</span><span class=" gold">Boxing</span></a>
+                    <a href="/home"
+                       data-path
+                       title="The Style Of Boxing"><span class="white">The</span><span class=" gold">Style</span><span class="white">Of</span><span class=" gold">Boxing</span></a>
                 </div>
             </div>
             <div class="header-bottom">
@@ -15,19 +17,29 @@
                         <nav class="navigation">
                             <ul class="nav">
                                 <li class="nav-item">
-                                    <a href="home" data-path class="nav-link active">Home</a>
+                                    <a href="home"
+                                       data-path
+                                       class="nav-link active">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="basics" data-path class="nav-link">Basics</a>
+                                    <a href="basics"
+                                       data-path
+                                       class="nav-link">Basics</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="techniques" data-path class="nav-link">Techniques</a>
+                                    <a href="techniques"
+                                       data-path
+                                       class="nav-link">Techniques</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="training" data-path class="nav-link"> Training</a>
+                                    <a href="training"
+                                       data-path
+                                       class="nav-link"> Training</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="strategy" data-path class="nav-link">Strategy</a>
+                                    <a href="strategy"
+                                       data-path
+                                       class="nav-link">Strategy</a>
                                 </li>
                             </ul>
                         </nav>
@@ -37,24 +49,33 @@
                         <div class="search-field">
                             <i class="glyphicon glyphicon-search"></i>
                             <label for="input">Search this website...</label>
-                            <input type="text" class="form-control" />
+                            <input type="text"
+                                   class="form-control" />
                         </div>
                     </div>
                 </div>
             </div>
             <!-- mobile -->
-            <a href="" class="mobile-toggle"></a>
+            <a href=""
+               class="mobile-toggle"></a>
             <p class="small-nav">
-                <a href="home" class="home" data-path>Home</a>
+                <a href="home"
+                   class="home"
+                   data-path>Home</a>
                 <span class="arrow">&raquo;</span>
-                <a href='{{category}}' class="category" data-path>{{category}}</a>
+                <a href='{{category}}'
+                   class="category"
+                   data-path>{{category}}</a>
                 <span class="arrow">&raquo;</span>
-                <a href='{{category}}/{{title}}' class="title" data-path>{{title}}</a>
+                <a href='{{category}}/{{title}}'
+                   class="title"
+                   data-path>{{title}}</a>
             </p>
         </header>
 
         <!-- Main -->
-        <main class="main" role="main">
+        <main class="main"
+              role="main">
             <div class="container">
                 <div class="left-main-section">
                     <section class="top-post-section clearfix">
@@ -95,20 +116,37 @@
                             <div class="share-this ">
                                 <h1 class="red">Share this</h1>
                                 <a href="http://twitter.com/share?url=https://thestyleofboxing.firebaseapp.com&text=thestyleofboxing&hashtags=thestyleofboxing"
-                                    target="_blank" class="share-button">
-                                    <img src="./images/twitter-icon.png" alt="twitter">
+
+                                   target="_blank"
+                                   class="share-button">
+                                    <div class="twitter icon"></div>
                                 </a>
-                                <a href="http://www.facebook.com/sharer.php?u=https://thestyleofboxing.firebaseapp.com" target="_blank" class="share-button">
-                                    <img src="./images/facebook-icon.png" alt="facebook">
+                                <a href="http://www.facebook.com/sharer.php?u=https://thestyleofboxing.firebaseapp.com"
+                                   target="_blank"
+                                   class="share-button">
+                                    <div class="facebook icon">
+
+                                    </div>
                                 </a>
-                                <a href="" class="share-button">
-                                    <img src="./images/delicious-icon.png" alt="delicious">
+                                <a href=""
+                                   class="share-button">
+                                    <div class="delicious icon">
+
+                                    </div>
                                 </a>
-                                <a href="http://www.digg.com/submit?url=https://thestyleofboxing.firebaseapp.com" target="_blank" class="share-button">
-                                    <img src="./images/digg-icon.png" alt="digg">
+                                <a href="http://www.digg.com/submit?url=https://thestyleofboxing.firebaseapp.com"
+                                   target="_blank"
+                                   class="share-button">
+                                    <div class="digg icon">
+
+                                    </div>
                                 </a>
-                                <a href="http://reddit.com/submit?url=https://thestyleofboxing.firebaseapp.com=TheStyleOfBoxing" target="_blank" class="share-button">
-                                    <img src="./images/reddit-icon.png" alt="reddit">
+                                <a href="http://reddit.com/submit?url=https://thestyleofboxing.firebaseapp.com=TheStyleOfBoxing"
+                                   target="_blank"
+                                   class="share-button">
+                                    <div class="reddit icon">
+
+                                    </div>
                                 </a>
                             </div>
                         </aside>
@@ -133,7 +171,8 @@
                             {{#each comments}}
                             <div class="comment ">
                                 <div class="avatar ">
-                                    <img src={{avatar}} alt="avatar">
+                                    <img src={{avatar}}
+                                         alt="avatar">
                                     <div class="frame-border">
                                     </div>
                                     <div class=" month white">
@@ -155,16 +194,29 @@
                         </div>
                         <div class="post-comment">
                             <h1 class="red">Leave a comment</h1>
-                            <form action="POST" id="newComment">
+                            <form action="POST"
+                                  id="newComment">
                                 <div class="form-group">
-                                    <input type="text" name="author" id="author" class="form-control author grey" required>
+                                    <input type="text"
+                                           name="author"
+                                           id="author"
+                                           class="form-control author grey"
+                                           required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea rows="14" cols="30" id="content" class="form-control textarea grey" name="content" required>
+                                    <textarea rows="14"
+                                              cols="30"
+                                              id="content"
+                                              class="form-control textarea grey"
+                                              name="content"
+                                              required>
                                     </textarea>
                                 </div>
 
-                                <button type="submit" value="Submit" id="saveForm" class="btn btn-default submit-button">Submit
+                                <button type="submit"
+                                        value="Submit"
+                                        id="saveForm"
+                                        class="btn btn-default submit-button">Submit
                                         </button>
                             </form>
                         </div>
@@ -173,13 +225,16 @@
                 <div class="right-main-section">
                     <div class="recent-popular-random">
                         <div class="controls  ">
-                            <a type="" class="dotted recent text-center active ">
+                            <a type=""
+                               class="dotted recent text-center active ">
                                 <h1 class="red">Recent</h1>
                             </a>
-                            <a type="" class="dotted popular text-center ">
+                            <a type=""
+                               class="dotted popular text-center ">
                                 <h1 class="red">Popular</h1>
                             </a>
-                            <a type="" class="dotted random text-center ">
+                            <a type=""
+                               class="dotted random text-center ">
                                 <h1 class="red">Random</h1>
                             </a>
                         </div>
@@ -187,7 +242,8 @@
                             {{#each comments}}
                             <div class="post ">
                                 <div class="avatar ">
-                                    <img src={{avatar}} alt="avatar">
+                                    <img src={{avatar}}
+                                         alt="avatar">
                                     <div class="frame-border">
                                     </div>
 

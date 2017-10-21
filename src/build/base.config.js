@@ -53,13 +53,25 @@ const config = {
             test: /\.handlebars$/,
             loader: 'text-loader',
         },
+        // {
+        //     test: /\.(png|jpe?g|gif)(\?.*)?$/,
+        //     loader: 'url-loader',
+        //     options: {
+        //         limit: 100,
+        //         name: 'post/images/[name].[ext]'
+        //     },
+        // },
         {
-            test: /\.(png|jpe?g|gif)(\?.*)?$/,
-            loader: 'url-loader',
-            options: {
-                limit: 100,
-                name: 'post/images/[name].[ext]'
-            },
+            test: /\.(gif|png|jpe?g|svg)$/i,
+            use: [
+                'file-loader',
+                {
+                  loader: 'image-webpack-loader',
+                  options: {
+                    bypassOnDebug: true,
+                  },
+                },
+              ],
         },
         {
             test: /\.ico$/,

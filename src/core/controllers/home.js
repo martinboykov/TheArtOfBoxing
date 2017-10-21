@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { compile } from 'handlebars';
 import template from '../../view/home.handlebars';
-
+import '../../assets/icons/search-icon.svg';
 // This import loads the firebase namespace along with all its type information.
 import * as firebase from 'firebase/app';
 

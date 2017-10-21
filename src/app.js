@@ -7,6 +7,7 @@ import './assets/icons/digg-icon.png';
 import './assets/icons/facebook-icon.png';
 import './assets/icons/reddit-icon.png';
 import './assets/icons/twitter-icon.png';
+import './assets/icons/search-icon.png';
 
 import config from '../src/core/data/firebase';
 

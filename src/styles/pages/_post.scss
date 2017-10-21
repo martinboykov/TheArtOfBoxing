@@ -140,7 +140,7 @@
                         margin-bottom: 16px;
                         border-top: 9px solid transparent;
                         border-bottom: 9px solid transparent;
-                        border-image: url('https://firebasestorage.googleapis.com/v0/b/thestyleofboxing.appspot.com/o/border.png?alt=media&token=158ba72d-c698-4c89-a623-5660db86f96e') 33.333% 0 33.333% 0 round;
+                        border-image: url('../../assets/images/border.png') 33.333% 0 33.333% 0 round;
                         @include media-query-post;
                         .aside {
                             @media (max-width: 1200px) {
@@ -253,8 +253,32 @@
                                     display: block;
                                     float: left;
                                     padding-right: 10px;
-                                    img {
+                                    div {
                                         width: 26px;
+                                        height: 26px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        content: "";
+                                        background: no-repeat center center;
+                                        background-size: 100% 100%;
+                                         border-color: transparent;
+                                        // padding-right: 10px;
+                                        &.twitter{
+                                            background-image:  str-replace(url("../../assets/icons/twitter-icon.png"), "#", "%50");
+                                        }
+                                        &.facebook{
+                                            background-image:  str-replace(url("../../assets/icons/facebook-icon.png"), "#", "%50");
+                                        }
+                                        &.delicious{
+                                            background-image:  str-replace(url("../../assets/icons/delicious-icon.png"), "#", "%50");
+                                        }
+                                        &.digg{
+                                            background-image:  str-replace(url("../../assets/icons/digg-icon.png"), "#", "%50");
+                                        }
+                                        &.reddit{
+                                            background-image:  str-replace(url("../../assets/icons/reddit-icon.png"), "#", "%50");
+                                        }
+
                                     }
                                 }
                             }
@@ -307,7 +331,7 @@
                         position: relative;
                         border-top: 9px solid transparent;
                         border-bottom: 9px solid transparent;
-                        border-image: url('https://firebasestorage.googleapis.com/v0/b/thestyleofboxing.appspot.com/o/border.png?alt=media&token=158ba72d-c698-4c89-a623-5660db86f96e') 33.333% 0 33.333% 0 round;
+                        border-image: url('../../assets/images/border.png') 33.333% 0 33.333% 0 round;
                         .title {
                             margin: 12px 0 0 20px;
                             height: 80px;
@@ -410,7 +434,7 @@
                         margin-bottom: 16px;
                         text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
                         border-bottom: 9px solid transparent;
-                        border-image: url('https://firebasestorage.googleapis.com/v0/b/thestyleofboxing.appspot.com/o/border.png?alt=media&token=158ba72d-c698-4c89-a623-5660db86f96e') 0 0 33.333% 0 round;
+                        border-image: url('../../assets/images/border.png') 0 0 33.333% 0 round;
                         .controls {
                             width: 378px;
                             @include clearfix;
@@ -500,7 +524,7 @@
                         margin-bottom: 16px;
                         text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
                         border-bottom: 9px solid transparent;
-                        border-image: url('https://firebasestorage.googleapis.com/v0/b/thestyleofboxing.appspot.com/o/border.png?alt=media&token=158ba72d-c698-4c89-a623-5660db86f96e') 0 0 33.333% 0 round;
+                        border-image: url('../../assets/images/border.png') 0 0 33.333% 0 round;
                         .dotted {
                             height: 59px;
                             line-height: 59px;
