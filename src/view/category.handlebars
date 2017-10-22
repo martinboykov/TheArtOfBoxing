@@ -2,55 +2,92 @@
     <div class="app-wrapper ">
         <!-- Header -->
         <header class="header">
-            <div class="header-top">
-                <div class="logo">
-                    <!-- <a href="home" data-path title="The Style"><span class="white">The</span><span class=" gold">Style</span></a> -->
-                    <a href="/home" data-path title="The Style Of Boxing"><span class="white">The</span><span class=" gold">Style</span><span class="white">Of</span><span class=" gold">Boxing</span></a>
-                </div>
-            </div>
-            <div class="header-bottom">
-                <div class="row">
-                    <div class="col-lg-8 mr-auto">
-                        <!-- navigation -->
-                        <nav class="navigation">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a href="/home" data-path class="nav-link active">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/basics" data-path class="nav-link">Basics</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/techniques" data-path class="nav-link">Techniques</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/training" data-path class="nav-link"> Training</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/strategy" data-path class="nav-link">Strategy</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-auto">
-                        <!-- search -->
-                        <div class="search-field">
-                            <!-- <img src="./post/images/search-icon.png" alt=""> -->
-                            <i class="glyphicon glyphicon-search"></i>
-                            <label for="input">Search this website...</label>
-                            <input type="text" class="form-control" />
+                <div class="container">
+                        <div class="header-top">
+                            <div class="logo">
+                                <a href="/home"
+                                   data-path
+                                   title="The Style Of Boxing"><span class="white">The</span><span class=" gold">Style</span><span class="white">Of</span><span class=" gold">Boxing</span></a>
+                            </div>
                         </div>
+                        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+                            <button class="navbar-toggler"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#navbarSupportedContent"
+                                    aria-controls="navbarSupportedContent"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                            <div class="collapse navbar-collapse"
+                                 id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a href="/home"
+                                           data-path
+                                           class="nav-link active">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/basics"
+                                           data-path
+                                           class="nav-link">Basics</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/techniques"
+                                           data-path
+                                           class="nav-link">Techniques</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/training"
+                                           data-path
+                                           class="nav-link"> Training</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/strategy"
+                                           data-path
+                                           class="nav-link">Strategy</a>
+                                    </li>
+                                    <!-- <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle"
+                                           href="#"
+                                           id="navbarDropdown"
+                                           role="button"
+                                           data-toggle="dropdown"
+                                           aria-haspopup="true"
+                                           aria-expanded="false">
+                                            Dropdown
+                                          </a>
+                                        <div class="dropdown-menu"
+                                             aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item"
+                                               href="#">Action</a>
+                                            <a class="dropdown-item"
+                                               href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item"
+                                               href="#">Something else here</a>
+                                        </div>
+                                    </li> -->
+                                </ul>
+                                <form class="form-inline">
+                                    <input class="form-control "
+                                           type="search"
+                                           placeholder="Search this website..."
+                                           aria-label="Search">
+                                  <button class="button" type="submit"></button>
+                                </form>
+                            </div>
+                        </nav>
+                        <p class="small-nav">
+                                <a href="home" class="home" data-path>Home</a>
+                                <span class="arrow">&raquo;</span>
+                                <a href={{category}} class="category" data-path>{{category}}</a>
+                            </p>
                     </div>
-                </div>
-            </div>
-            <!-- mobile -->
-            <a href="" class="mobile-toggle"></a>
             <!-- small navigation -->
-            <p class="small-nav">
-                <a href="home" class="home" data-path>Home</a>
-                <span class="arrow">&raquo;</span>
-                <a href={{category}} class="category" data-path>{{category}}</a>
-            </p>
+
         </header>
 
         <!-- Main -->
@@ -135,74 +172,91 @@
                         </div>
                     </div>
                 </div>
+                <div class="pagination">
+                        <!-- to implement: http://esimakin.github.io/twbs-pagination/ and/or
+                        https://github.com/flaviusmatis/simplePagination.js -->
+                    </div>
             </div>
 
 
 
 
-            <div class="pagination">
-                <!-- to implement: http://esimakin.github.io/twbs-pagination/ and/or
-                https://github.com/flaviusmatis/simplePagination.js -->
-            </div>
+
         </main>
 
 
         <!-- Footer -->
-        <footer class="footer clearfix">
-            <div class="footer-top">
-                <div class="container-fluid ">
-                    <div class="row">
-                        <section class="section-recent-posts col-lg-3 col-md-4 col-sm-6 col-12">
-                            <h1 class="gold">Recent posts</h1>
-                            <ul class="recent-posts text">
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                            </ul>
-                        </section>
-                        <section class="custom-text-widget   col-lg-3 col-md-4  col-sm-6 col-12">
-                            <h1 class="gold">Custom Text Widget</h1>
-                            <p class="text">Fusce suscipit sapien sit amet sapien placerat ultrices. Vivamus sed massa ac metus gravida dignissim
-                                egestas posuere lorem. Sed ipsum urna, facilisis quis eleifend ut, sodales sed lectus. Integer
-                                felis eu ipsum malesuada luctus. Sed pharetra eleifend ante vitae fermentum. Praesent fermentum
-                                volutpat porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim, nibh
-                                quis ultricies laoreet, libero justo suscipit risus, sed sollicitudin odio erat at purus.
-                                Quisque molestie venenatis turpis eu adipiscing. Pellentesque habi</p>
-                        </section>
-                        <section class="section-recent-comments   col-lg-3 col-md-4  col-sm-6 col-12">
-                            <h1 class="gold">Recent comments</h1>
-                            <ul class="recent-comments text">
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                            </ul>
-                        </section>
-                        <section class="section-archives   col-lg-3 col-md-4  col-sm-6 col-12 ">
-                            <h1 class="gold">Archives</h1>
-                            <ul class="archives-items text">
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                            </ul>
-                        </section>
+        <footer class="footer">
+                <div class="footer-top">
+                    <div class="container ">
+                        <div class="row ">
+                            <section class=" col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="section-recent-posts">
+                                        <h1 class="gold">Recent posts</h1>
+                                        <ul class="recent-posts text">
+                                            <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                            <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                            <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                            <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                            <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                            <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                            <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                        </ul>
+                                </div>
+
+                            </section>
+                            <section class="col-xl-3 col-lg-6 col-md-6  col-sm-12 col-12">
+                                <div class="custom-text-widget">
+                                <h1 class="gold">Custom Text Widget</h1>
+                                <p class="text">Fusce suscipit sapien sit amet sapien placerat ultrices. Vivamus sed massa ac metus gravida dignissim
+                                    egestas posuere lorem. Sed ipsum urna, facilisis quis eleifend ut, sodales sed lectus. Integer
+                                    felis eu ipsum malesuada luctus. Sed pharetra eleifend ante vitae fermentum. Praesent fermentum
+                                    volutpat porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim, nibh
+                                    quis ultricies laoreet, libero justo suscipit risus, sed sollicitudin odio erat at purus.
+                                    Quisque molestie venenatis turpis eu adipiscing. Pellentesque habi</p>
+                                </div>
+                            </section>
+                            <section class="col-xl-2 col-lg-6 col-md-6  col-sm-12 col-12">
+                                <div class="section-recent-comments   ">
+
+
+                                <h1 class="gold">Recent comments</h1>
+                                <ul class="recent-comments text">
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                </ul>
+                            </div>
+                            </section>
+                            <section class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                <div class="section-archives">
+                                <h1 class="gold">Archives</h1>
+                                <ul class="archives-items text">
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien sit amet</li>
+                                </ul>
+                            </div>
+                            </section>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Designed by <span class="bold">Martin Martinov</span> | Powered by <span class="bold">Teleric Academy</span></p>
-            </div>
-        </footer>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                                <p>Designed by <span class="bold">Martin Martinov</span> | Powered by <span class="bold">Teleric Academy</span></p>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
     </div>
 </div>`
