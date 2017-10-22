@@ -44,6 +44,7 @@
             .navbar {
                 background: transparent !important;
                 margin-top: 3px; // padding-left: 0px; // @include media-query-header-bottom;.
+                padding-bottom: 15px;
                 .navbar-toggler {
                     margin-bottom: 10px;
                 }
@@ -246,14 +247,21 @@
             border-top: 1px solid #4a4a4a;
             box-shadow: 0px -1px 3px 0px rgba(0, 0, 0, 0.8);
             @include gradient-footer;
-            $media-large: 1500px;
-            min-height: 420px;
+            @media (min-width: $media-large) {
+                min-height: 420px;
+            }
             .footer-top {
                 padding-top: 46px;
                 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.78);
+                @media (max-width: 767px) {
+                    padding-top:0px;
+                }
                 .text {
                     font-family: $font-mp;
                     color: #d1d1d1;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                 }
                 .arrow {
                     font-family: 'Arial';
@@ -261,9 +269,15 @@
                     color: #5d5d5d;
                 }
                 .section-recent-posts {
-                    max-width: 250px;
+                    width: 280px;
                     @media (min-width: $media-large) {
-                        margin-left: 182px;
+                        margin-left: 129px;
+                    }
+                    @media (max-width: 1399px) {
+                        margin: 0 auto;
+                    }
+                    @media (max-width: 767px) {
+                        display: none;
                     }
                     .recent-posts {
                         padding: 9px 0 0 1px;
@@ -277,9 +291,18 @@
                     }
                 }
                 .custom-text-widget {
-                    max-width: 300px;
+                    width: 280px;
+                    max-height: 235px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                     @media (min-width: $media-large) {
-                        margin-left: 92px;
+                        margin-left: 77px;
+                    }
+                    @media (max-width: 1399px) {
+                        margin: 0 auto;
+                    }
+                    @media (max-width: 767px) {
+                        display: none;
                     }
                     h1 {
                         margin-bottom: 11px;
@@ -288,12 +311,19 @@
                         margin-left: 2px;
                         line-height: 17px;
                         text-justify: auto;
+                        white-space: normal;
                     }
                 }
                 .section-recent-comments {
-                    max-width: 275px;
+                    width: 280px;
                     @media (min-width: $media-large) {
-                        margin-left: 38px;
+                        margin-left: 22px;
+                    }
+                    @media (max-width: 1399px) {
+                        margin: 0 auto;
+                    }
+                    @media (max-width: 767px) {
+                        display: none;
                     }
                     .recent-comments {
                         padding: 11px 0 0 1px;
@@ -313,9 +343,15 @@
                     }
                 }
                 .section-archives {
-                    max-width: 275px;
+                    width: 280px;
                     @media (min-width: $media-large) {
-                        margin-left: 50px;
+                        margin-left: 84px;
+                    }
+                    @media (max-width: 1399px) {
+                        margin: 0 auto;
+                    }
+                    @media (max-width: 767px) {
+                        display: none;
                     }
                     .archives-items {
                         padding: 10px 0 0 2px;
@@ -331,16 +367,21 @@
             }
             .footer-bottom {
                 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.78);
-                width: 100%;
+                @media (min-width: $media-large) {
+                    float: right;
+                    padding-top: 50px;
+                    padding-right: 170px;
+                }
+                @media (max-width: 1399px) {
+                    padding-top: 50px;
+                    margin: 0 auto;
+                }
+                @media (max-width: 767px) {
+                    padding-top: 10px;
+                }
                 p {
-                    margin-top: 52px;
-                    margin-left: 1173px;
+                    font-size: 12px;
                     color: $dark-grey;
-                    padding-bottom: 20px;
-                    @media (max-width: 1500px) {
-                        margin-top: 52px;
-                        margin-left: 15px;
-                    }
                     .bold {
                         color: #8c8c8c;
                     }
@@ -349,37 +390,3 @@
         }
     }
 }
-
-// .row {
-//     .content {
-//         border: 1px solid black;
-//         &.content-1 {
-//             &.col:first-child,
-//             .col:not(:last-child) {
-//                 padding-right: 7px;
-//             }
-//             &.col:last-child {
-//                 padding-left: 7px;
-//             }
-//             &.col:not(:first-child),
-//             .col:not(:last-child) {
-//                 padding-right: 7px;
-//                 padding-left: 7px;
-//             }
-//         }
-//         &.content-2 {
-//             &.col:first-child,
-//             .col:not(:last-child) {
-//                 padding-right: 17px;
-//             }
-//             &.col:last-child {
-//                 padding-left: 17px;
-//             }
-//             &.col:not(:first-child),
-//             .col:not(:last-child) {
-//                 padding-right: 17px;
-//                 padding-left: 17px;
-//             }
-//         }
-//     }
-// }
