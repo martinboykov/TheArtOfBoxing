@@ -2,75 +2,107 @@
     <div class="app-wrapper ">
         <!-- Header -->
         <header class="header">
-            <div class="header-top">
-                <div class="logo">
-                    <!-- <a href="home" data-path title="The Style"><span class="white">The</span><span class=" gold">Style</span></a> -->
-                    <a href="/home"
-                       data-path
-                       title="The Style Of Boxing"><span class="white">The</span><span class=" gold">Style</span><span class="white">Of</span><span class=" gold">Boxing</span></a>
-                </div>
-            </div>
-            <div class="header-bottom">
-                <div class="row">
-                    <div class="col-lg-8 mr-auto">
-                        <!-- navigation -->
-                        <nav class="navigation">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a href="home"
-                                       data-path
-                                       class="nav-link active">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="basics"
-                                       data-path
-                                       class="nav-link">Basics</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="techniques"
-                                       data-path
-                                       class="nav-link">Techniques</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="training"
-                                       data-path
-                                       class="nav-link"> Training</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="strategy"
-                                       data-path
-                                       class="nav-link">Strategy</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-auto">
-                        <!-- search -->
-                        <div class="search-field">
-                            <i class="glyphicon glyphicon-search"></i>
-                            <label for="input">Search this website...</label>
-                            <input type="text"
-                                   class="form-control" />
-                        </div>
+            <div class="container">
+                <div class="header-top">
+                    <div class="logo">
+                        <a href="/home"
+                           data-path
+                           title="The Style Of Boxing"><span class="white">The</span><span class=" gold">Style</span><span class="white">Of</span><span class=" gold">Boxing</span></a>
                     </div>
                 </div>
+                <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                    <div class="collapse navbar-collapse"
+                         id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto ">
+                            <li class="nav-item"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse.show">
+                                <a href="/home"
+                                   data-path
+                                   class="nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse.show">
+                                <a href="/basics"
+                                   data-path
+                                   class="nav-link">Basics</a>
+                            </li>
+                            <li class="nav-item"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse.show">
+                                <a href="/techniques"
+                                   data-path
+                                   class="nav-link">Techniques</a>
+                            </li>
+                            <li class="nav-item"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse.show">
+                                <a href="/training"
+                                   data-path
+                                   class="nav-link"> Training</a>
+                            </li>
+                            <li class="nav-item"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse.show">
+                                <a href="/strategy"
+                                   data-path
+                                   class="nav-link">Strategy</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle"
+                                           href="#"
+                                           id="navbarDropdown"
+                                           role="button"
+                                           data-toggle="dropdown"
+                                           aria-haspopup="true"
+                                           aria-expanded="false">
+                                            Dropdown
+                                          </a>
+                                        <div class="dropdown-menu"
+                                             aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item"
+                                               href="#">Action</a>
+                                            <a class="dropdown-item"
+                                               href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item"
+                                               href="#">Something else here</a>
+                                        </div>
+                                    </li> -->
+                        </ul>
+                        <form class="form-inline">
+                            <input class="form-control "
+                                   type="search"
+                                   placeholder="Search this website..."
+                                   aria-label="Search">
+                            <button class="button"
+                                    type="submit"></button>
+                        </form>
+                    </div>
+                </nav>
+                <p class="small-nav">
+                    <a href="home"
+                       class="home"
+                       data-path>Home</a>
+                    <span class="arrow">&raquo;</span>
+                    <a href={{category}}
+                       class="category"
+                       data-path>{{category}}</a>
+                </p>
             </div>
-            <!-- mobile -->
-            <a href=""
-               class="mobile-toggle"></a>
-            <p class="small-nav">
-                <a href="home"
-                   class="home"
-                   data-path>Home</a>
-                <span class="arrow">&raquo;</span>
-                <a href='{{category}}'
-                   class="category"
-                   data-path>{{category}}</a>
-                <span class="arrow">&raquo;</span>
-                <a href='{{category}}/{{title}}'
-                   class="title"
-                   data-path>{{title}}</a>
-            </p>
+            <!-- small navigation -->
+
         </header>
 
         <!-- Main -->
@@ -79,91 +111,97 @@
             <div class="container">
                 <div class="left-main-section">
                     <section class="top-post-section clearfix">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 col-sm-5">
+                                    <aside class="aside">
+                                            <div class="frame">
+                                                <div class=" category text-center">
+                                                    <h2 class="white">{{post.category}}</h2>
+                                                </div>
+                                                <div class=" month white">
+                                                    <h2 class="date white">{{post.month}}</h2>
+                                                </div>
+                                                <div class=" day white">
+                                                    <h2 class="date white">{{post.day}}</h2>
+                                                </div>
+                                            </div>
+                                            <div class="frame-border">
+                                            </div>
+                                        <div class="tags clearfix">
+                                            <h1 class="tags-title">Tags</h1>
+                                            <ul class="tag-items">
+                                                {{#each post.tags}}
+                                                <li class="tag-item">
+                                                    {{this}}
+                                                </li>
+                                                {{/each}}
+                                            </ul>
+                                        </div>
+                                        <div class="related-posts clearfix">
+                                            <h1 class="red">Related posts</h1>
+                                            <ul class="items">
+                                                <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet
+                                                </li>
+                                                <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet
+                                                </li>
+                                                <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="share-this ">
+                                            <h1 class="red">Share this</h1>
+                                            <a href="http://twitter.com/share?url=https://thestyleofboxing.firebaseapp.com&text=thestyleofboxing&hashtags=thestyleofboxing"
 
-                        <aside class="aside">
+                                               target="_blank"
+                                               class="share-button">
+                                                <div class="twitter icon"></div>
+                                            </a>
+                                            <a href="http://www.facebook.com/sharer.php?u=https://thestyleofboxing.firebaseapp.com"
+                                               target="_blank"
+                                               class="share-button">
+                                                <div class="facebook icon">
 
-                            <div class="frame">
-                                <div class=" category text-center">
-                                    <h2 class="white">{{post.category}}</h2>
+                                                </div>
+                                            </a>
+                                            <a href=""
+                                               class="share-button">
+                                                <div class="delicious icon">
+
+                                                </div>
+                                            </a>
+                                            <a href="http://www.digg.com/submit?url=https://thestyleofboxing.firebaseapp.com"
+                                               target="_blank"
+                                               class="share-button">
+                                                <div class="digg icon">
+
+                                                </div>
+                                            </a>
+                                            <a href="http://reddit.com/submit?url=https://thestyleofboxing.firebaseapp.com=TheStyleOfBoxing"
+                                               target="_blank"
+                                               class="share-button">
+                                                <div class="reddit icon">
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </aside>
                                 </div>
-                                <div class=" month white">
-                                    <h2 class="date white">{{post.month}}</h2>
+                                <div class="col-lg-9 col-md-8 col-sm-7">
+                                    <article class="article">
+                                        <div class="dotted">
+                                            <h1 class="red">{{post.title}}</h1>
+                                            <h3 class="black">posted by {{post.author}}</h3>
+                                        </div>
+                                        <div class="text">
+                                            <p>{{{post.content}}}</p>
+                                        </div>
+                                    </article>
                                 </div>
-                                <div class=" day white">
-                                    <h2 class="date white">{{post.day}}</h2>
-                                </div>
                             </div>
-                            <div class="frame-border">
-                            </div>
-                            <div class="tags clearfix">
-                                <h1 class="tags-title">Tags</h1>
-                                <ul class="tag-items">
-                                    {{#each post.tags}}
-                                    <li class="tag-item">
-                                        {{this}}
-                                    </li>
-                                    {{/each}}
-                                </ul>
-                            </div>
-                            <div class="related-posts clearfix">
-                                <h1 class="red">Related posts</h1>
-                                <ul class="items">
-                                    <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
-                                    <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
-                                    <li class="item"> <span class="arrow-dotted">&#8278;</span> Fusce suscipit sapien sit amet </li>
-                                </ul>
-                            </div>
-                            <div class="share-this ">
-                                <h1 class="red">Share this</h1>
-                                <a href="http://twitter.com/share?url=https://thestyleofboxing.firebaseapp.com&text=thestyleofboxing&hashtags=thestyleofboxing"
-
-                                   target="_blank"
-                                   class="share-button">
-                                    <div class="twitter icon"></div>
-                                </a>
-                                <a href="http://www.facebook.com/sharer.php?u=https://thestyleofboxing.firebaseapp.com"
-                                   target="_blank"
-                                   class="share-button">
-                                    <div class="facebook icon">
-
-                                    </div>
-                                </a>
-                                <a href=""
-                                   class="share-button">
-                                    <div class="delicious icon">
-
-                                    </div>
-                                </a>
-                                <a href="http://www.digg.com/submit?url=https://thestyleofboxing.firebaseapp.com"
-                                   target="_blank"
-                                   class="share-button">
-                                    <div class="digg icon">
-
-                                    </div>
-                                </a>
-                                <a href="http://reddit.com/submit?url=https://thestyleofboxing.firebaseapp.com=TheStyleOfBoxing"
-                                   target="_blank"
-                                   class="share-button">
-                                    <div class="reddit icon">
-
-                                    </div>
-                                </a>
-                            </div>
-                        </aside>
-                        <article class="article">
-                            <div class="dotted">
-                                <h1 class="red">{{post.title}}</h1>
-                                <h3 class="black">posted by {{post.author}}</h3>
-                            </div>
-
-                            <div class="text">
-                                <p>{{{post.content}}}</p>
-                            </div>
-                        </article>
-
+                        </div>
                     </section>
                     <section class="bottom-comments-section">
-
                         <div class="title">
                             <h1 class="red">{{post.comments.length}} <span>&nbsp;</span> Comments </h1>
                         </div>
@@ -181,7 +219,6 @@
                                     <div class=" day white">
                                         <h2 class="date white">{{day}}</h2>
                                     </div>
-
                                 </div>
                                 <div class="text ">
                                     <h2 class="black">{{author}}</h2>
@@ -256,9 +293,7 @@
                                 </div>
                             </div>
                             {{/each}}
-
                         </div>
-
                     </div>
                     <div class="custom-widget">
                         <div class="dotted ">
@@ -293,61 +328,119 @@
             </div>
         </main>
         <!-- Footer -->
-        <!-- <footer class="footer ">
+        <footer class="footer clearfix">
             <div class="footer-top">
-                <div class="container-fluid ">
-                    <div class="row">
-                        <section class="section-recent-posts col-lg-3 col-md-4 col-sm-6 col-12">
-                            <h1 class="gold">Recent posts</h1>
-                            <ul class="recent-posts text">
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-post"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                            </ul>
+                <div class="container ">
+                    <div class="row ">
+                        <section class=" col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="section-recent-posts">
+                                <h1 class="gold">Recent posts</h1>
+                                <ul class="recent-posts text">
+                                    <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="recent-post text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                </ul>
+                            </div>
+
                         </section>
-                        <section class="custom-text-widget   col-lg-3 col-md-4  col-sm-6 col-12">
-                            <h1 class="gold">Custom Text Widget</h1>
-                            <p class="text">Fusce suscipit sapien sit amet sapien placerat ultrices. Vivamus sed massa ac metus gravida dignissim
-                                egestas posuere lorem. Sed ipsum urna, facilisis quis eleifend ut, sodales sed lectus. Integer
-                                felis eu ipsum malesuada luctus. Sed pharetra eleifend ante vitae fermentum. Praesent fermentum
-                                volutpat porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim, nibh
-                                quis ultricies laoreet, libero justo suscipit risus, sed sollicitudin odio erat at purus.
-                                Quisque molestie venenatis turpis eu adipiscing. Pellentesque habi</p>
+                        <section class="col-xl-3 col-lg-6 col-md-6  col-sm-12 col-12">
+                            <div class="custom-text-widget">
+                                <h1 class="gold">Custom Text Widget</h1>
+                                <p class="text">Fusce suscipit sapien sit amet sapien placerat ultrices. Vivamus sed massa ac metus gravida
+                                    dignissim egestas posuere lorem. Sed ipsum urna, facilisis quis eleifend ut, sodales
+                                    sed lectus. Integer felis eu ipsum malesuada luctus. Sed pharetra eleifend ante vitae
+                                    fermentum. Praesent fermentum volutpat porta. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Ut dignissim, nibh quis ultricies laoreet, libero justo suscipit risus,
+                                    sed sollicitudin odio erat at purus. Quisque molestie venenatis turpis eu adipiscing.
+                                    Pellentesque habi</p>
+                            </div>
                         </section>
-                        <section class="section-recent-comments   col-lg-3 col-md-4  col-sm-6 col-12">
-                            <h1 class="gold">Recent comments</h1>
-                            <ul class="recent-comments text">
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="recent-comment"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                            </ul>
+                        <section class="col-xl-2 col-lg-6 col-md-6  col-sm-12 col-12">
+                            <div class="section-recent-comments   ">
+
+
+                                <h1 class="gold">Recent comments</h1>
+                                <ul class="recent-comments text">
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="recent-comment text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                </ul>
+                            </div>
                         </section>
-                        <section class="section-archives   col-lg-3 col-md-4  col-sm-6 col-12 ">
-                            <h1 class="gold">Archives</h1>
-                            <ul class="archives-items text">
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                                <li class="archive-item"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet </li>
-                            </ul>
+                        <section class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                            <div class="section-archives">
+                                <h1 class="gold">Archives</h1>
+                                <ul class="archives-items text">
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                    <li class="archive-item text"><span class="arrow">&raquo;</span>Fusce suscipit sapien sit amet Fusce suscipit sapien
+                                        sit amet
+                                    </li>
+                                </ul>
+                            </div>
                         </section>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Designed by <span class="bold">Martin Martinov</span> | Powered by <span class="bold">Teleric Academy</span></p>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <p>Designed by <span class="bold">Martin Martinov</span> | Powered by <span class="bold">Teleric Academy</span></p>
+                    </div>
+                </div>
             </div>
-        </footer> -->
+        </footer>
     </div>
 </div>`

@@ -53,33 +53,15 @@
 }
 
 @mixin media-query-post() {
-    @media (max-width: 1200px) {
+    @media (max-width: 1600px) {
         align-self: auto;
-        width: 944px;
-    }
-    @media (max-width: 991px) {
-        width: 700px;
-    }
-    @media (max-width: 767px) {
-        width: 600px;
-    }
-    @media (max-width: 575px) {
-        width: 500px;
-    }
-    @media (max-width: 500px) {
-        width: 450px;
-    }
-    @media (max-width: 450px) {
-        width: 400px;
-    }
-    @media (max-width: 400px) {
-        width: 350px;
+        width: auto;
     }
 }
 
 @mixin media-query-content() {
     @media (max-width: 1200px) {
-        padding-left: 15px;
+         padding-left: 15px;
     }
 }
 

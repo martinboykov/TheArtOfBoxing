@@ -1,11 +1,12 @@
-/* Specific Category Page */
+/* Specific Category */
 
 .category {
     .app-wrapper {
         max-width: $full-width;
         min-height: 1628px;
         margin: 0 auto;
-        min-width: 360px;
+        margin-bottom: -10px;
+        min-width: 400px;
         @include gradient-main; // HEADER
         .header {
             min-height: 336px;
@@ -51,6 +52,7 @@
                             margin-bottom: 0px;
                         }
                     }
+                    .stay-open {display:block !important;}
                     .navbar-nav {
                         // margin-top: 10px;
                         .nav-item {
@@ -64,9 +66,8 @@
                                 color: white;
                                 &:hover {
                                     color: $gold;
-                                    background-color: #222222;
                                 }
-                                &:active {
+                                &.active {
                                     color: $gold;
                                 }
                             }
@@ -133,13 +134,13 @@
                     }
                 }
             }
-        } // MAiN
+        }
+        // MAiN
         .main {
             .container {
-                max-width: 1540px; // min-height: 836px;
+                max-width: 1540px;
                 .section {
-                    // float: left;
-                    max-width: 1250px; // margin-left: 3px;
+                    max-width: 1250px;
                     .col-xl-auto {
                         margin-bottom: 26px;
                     }
@@ -149,11 +150,11 @@
                         background-color: white;
                         border-bottom: 9px solid transparent;
                         border-image: url('../../assets/images/border.png') 0 0 33.333% 0 round;
-                        @media (max-width: 1400px) {
-                            min-width: 230px;
-                        }
-                        @media (min-width: 1401px) {
+                        @media (min-width: 1400px) {
                             width: 230px;
+                        }
+                        @media (max-width: 1399px) {
+                            min-width: 230px;
                         }
                         .top {
                             min-width: 224px;
@@ -201,7 +202,6 @@
                         .bottom {
                             background-color: white;
                             .dotted {
-                                // background: red;
                                 min-height: 73px;
                                 border-bottom: 1px dotted rgba(0, 0, 0, 0.35);
                                 .wrapper-bottom {
@@ -236,13 +236,20 @@
                 }
                 .right-section {
                     float: right;
+
                     @media (max-width: 575px) {
                         display: none;
                     }
                     .recent-comments,
                     .recent-posts {
-                        width: 230px;
-                        height: 280px;
+                        @media (min-width: 1400px) {
+                            width: 230px;
+                            height: 280px;
+                        }
+                        @media (max-width: 1399px) {
+                            min-width: 230px;
+
+                        }
                         background-color: #e7e7e7;
                         margin-bottom: 23px;
                         text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
@@ -407,16 +414,20 @@
                 @media (min-width: $media-large) {
                     float: right;
                     padding-top: 50px;
+                    margin-bottom: 20px;
                     padding-right: 170px;
                 }
                 @media (max-width: 1399px) {
                     padding-top: 50px;
+                    padding-bottom: 20px;
                     margin: 0 auto;
                 }
                 @media (max-width: 767px) {
                     padding-top: 10px;
+                    padding-bottom: 15px;
                 }
                 p {
+
                     font-size: 12px;
                     color: $dark-grey;
                     .bold {
@@ -427,37 +438,3 @@
         }
     }
 }
-
-// .row {
-//     .content {
-//         border: 1px solid black;
-//         &.content-1 {
-//             &.col:first-child,
-//             .col:not(:last-child) {
-//                 padding-right: 7px;
-//             }
-//             &.col:last-child {
-//                 padding-left: 7px;
-//             }
-//             &.col:not(:first-child),
-//             .col:not(:last-child) {
-//                 padding-right: 7px;
-//                 padding-left: 7px;
-//             }
-//         }
-//         &.content-2 {
-//             &.col:first-child,
-//             .col:not(:last-child) {
-//                 padding-right: 17px;
-//             }
-//             &.col:last-child {
-//                 padding-left: 17px;
-//             }
-//             &.col:not(:first-child),
-//             .col:not(:last-child) {
-//                 padding-right: 17px;
-//                 padding-left: 17px;
-//             }
-//         }
-//     }
-// }

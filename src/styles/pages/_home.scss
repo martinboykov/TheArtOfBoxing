@@ -5,7 +5,8 @@
         max-width: $full-width;
         min-height: 1628px;
         margin: 0 auto;
-        min-width: 360px;
+        min-width: 400px;
+        margin-bottom: -10px;
         @include gradient-main;
         .header {
             min-height: 336px;
@@ -22,10 +23,9 @@
                     @media (max-width: 1399px) {
                         padding-top: 10px;
                     }
-                    padding-left: 0px; // @include media-query-header-top;
+                    padding-left: 0px;
                     .logo {
                         a {
-                            // @include media-query-logo;
                             text-shadow: (1px 1px rgba(0, 0, 0, 1));
                             font-family: $font-yk;
                             font-size: 140px;
@@ -50,6 +50,7 @@
                             margin-bottom: 0px;
                         }
                     }
+                    .stay-open {display:block !important;}
                     .navbar-nav {
                         // margin-top: 10px;
                         .nav-item {
@@ -63,9 +64,8 @@
                                 color: white;
                                 &:hover {
                                     color: $gold;
-                                    background-color: #222222;
                                 }
-                                &:active {
+                                &.active {
                                     color: $gold;
                                 }
                             }
@@ -341,16 +341,20 @@
                 @media (min-width: $media-large) {
                     float: right;
                     padding-top: 50px;
+                    margin-bottom: 20px;
                     padding-right: 170px;
                 }
                 @media (max-width: 1399px) {
                     padding-top: 50px;
+                    padding-bottom: 20px;
                     margin: 0 auto;
                 }
                 @media (max-width: 767px) {
                     padding-top: 10px;
+                    padding-bottom: 15px;
                 }
                 p {
+
                     font-size: 12px;
                     color: $dark-grey;
                     .bold {
